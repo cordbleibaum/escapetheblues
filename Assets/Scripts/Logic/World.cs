@@ -6,7 +6,7 @@ namespace Logic
     public class World : MonoBehaviour
     {
         public int StartSadness;
-        public int MaxSadness;
+        public int MaxSadness = 100;
     
         public int Width = 4;
         public int Height = 4;
