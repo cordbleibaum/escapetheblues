@@ -6,8 +6,13 @@ public class Tile : MonoBehaviour {
         Left, Right, Up, Down
     }
 
-    public void transition(Direction direction)
+    public void transitionIn(Direction direction)
     {
-        
+        return null;
+    }
+    
+    public void transitionOut(Direction direction)
+    {
+        return null;
     }
 }
