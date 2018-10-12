@@ -1,18 +1,21 @@
 ﻿using UnityEngine;
 
-public class Tile : MonoBehaviour {
-    public enum Direction
-    {
-        Left, Right, Up, Down
-    }
+namespace Presentation
+{
+    public class Tile : MonoBehaviour {
+        public enum Direction
+        {
+            Left, Right, Up, Down
+        }
 
-    public void transitionIn(Direction direction)
-    {
+        public void TransitionIn(Direction direction)
+        {
 
-    }
+        }
     
-    public void transitionOut(Direction direction)
-    {
+        public void TransitionOut(Direction direction)
+        {
 
+        }
     }
 }

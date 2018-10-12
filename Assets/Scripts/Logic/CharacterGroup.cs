@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 
-public class CharacterGroup : MonoBehaviour
+namespace Logic
 {
-	public World world;
-	
-	public Character[] characters;
-	public Vector2Int goalPosition;
-
-	private void Start()
+	public class CharacterGroup : MonoBehaviour
 	{
-		int goalX = world.width - 1;
-		int goalY = Random.Range(0, world.height);
-		goalPosition = new Vector2Int(goalX, goalY);
+		public World World;
+	
+		public Character[] Characters;
+		public Vector2Int GoalPosition;
+
+		private void Start()
+		{
+			int goalX = World.Width - 1;
+			int goalY = Random.Range(0, World.Height);
+			GoalPosition = new Vector2Int(goalX, goalY);
+		}
 	}
 }

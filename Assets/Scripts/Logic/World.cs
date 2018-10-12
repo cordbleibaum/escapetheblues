@@ -1,21 +1,25 @@
-﻿using UnityEngine;
+﻿using Presentation;
+using UnityEngine;
 
-public class World : MonoBehaviour
+namespace Logic
 {
-    public int startSadness;
-    public int maxSadness;
-    
-    public int width = 4;
-    public int height = 4;
-
-    public Tile[] tiles;
-    public Vector2Int currentPosition;
-    public Tile currentTile;
-
-    private int sadness;
-    
-    private void Start()
+    public class World : MonoBehaviour
     {
-        sadness = startSadness;
+        public int StartSadness;
+        public int MaxSadness;
+    
+        public int Width = 4;
+        public int Height = 4;
+
+        public Tile[] Tiles;
+        public Vector2Int CurrentPosition;
+        public Tile CurrentTile;
+
+        private int sadness;
+    
+        private void Start()
+        {
+            sadness = StartSadness;
+        }
     }
 }
