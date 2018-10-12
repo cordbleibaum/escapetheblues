@@ -5,9 +5,11 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Character.cs" t="Include" />
-          <e p="CharacterGroup.cs" t="Include" />
-          <e p="World.cs" t="Include" />
+          <e p="Logic" t="Include">
+            <e p="Character.cs" t="Include" />
+            <e p="CharacterGroup.cs" t="Include" />
+            <e p="World.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="BeansjamMobile.sln" t="IncludeFlat" />
