@@ -21,5 +21,14 @@ namespace Logic
         {
             sadness = StartSadness;
         }
+
+        public bool gainSadness(int amount)
+        {
+            sadness += amount;
+            if (sadness > MaxSadness)
+            {
+                // GameOver
+            }
+        }
     }
 }
