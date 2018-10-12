@@ -10,8 +10,8 @@ namespace Logic
 
         private void Start()
         {
-            int goalX = Random.Range(0, group.World.Width);
-            int goalY = Random.Range(0, group.World.Height);
+            var goalX = Random.Range(0, group.World.Width);
+            var goalY = Random.Range(0, group.World.Height);
             if (goalY == 0 && goalX == 0)
             {
                 while (goalX == 0)

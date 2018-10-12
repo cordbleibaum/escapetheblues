@@ -11,8 +11,8 @@ namespace Logic
 
 		private void Start()
 		{
-			int goalX = World.Width - 1;
-			int goalY = Random.Range(0, World.Height);
+			var goalX = World.Width - 1;
+			var goalY = Random.Range(0, World.Height);
 			GoalPosition = new Vector2Int(goalX, goalY);
 		}
 	}
