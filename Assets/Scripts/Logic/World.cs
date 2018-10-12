@@ -22,7 +22,7 @@ namespace Logic
             sadness = StartSadness;
         }
 
-        public bool gainSadness(int amount)
+        public void gainSadness(int amount)
         {
             sadness += amount;
             if (sadness > MaxSadness)
