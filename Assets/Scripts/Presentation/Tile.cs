@@ -8,11 +8,11 @@ public class Tile : MonoBehaviour {
 
     public void transitionIn(Direction direction)
     {
-        return null;
+
     }
     
     public void transitionOut(Direction direction)
     {
-        return null;
+
     }
 }
