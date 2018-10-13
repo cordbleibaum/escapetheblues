@@ -12,12 +12,14 @@
           </e>
           <e p="Presentation" t="Include">
             <e p="Arrow.cs" t="Include" />
-            <e p="Dialogue.cs" t="Include" />
             <e p="HUD.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
+            <e p="Tile.cs" t="Include" />
+          </e>
+          <e p="Tiles" t="Include">
+            <e p="Dialogue.cs" t="Include" />
             <e p="Skip.cs" t="Include" />
             <e p="Teleport.cs" t="Include" />
-            <e p="Tile.cs" t="Include" />
           </e>
         </e>
       </e>
