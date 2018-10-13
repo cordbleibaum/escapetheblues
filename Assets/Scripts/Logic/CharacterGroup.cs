@@ -5,8 +5,16 @@ namespace Logic
 {
 	public class CharacterGroup : MonoBehaviour
 	{
-		public World world;
+		public CharacterGroup instance;
 
-		public Character[] characters;
+		private void Start()
+		{
+			instance = this.instance;
+		}
+
+		public Character timmy;
+		public Character uncle;
+		public Character sister;
+		public Character grandpa;
 	}
 }
