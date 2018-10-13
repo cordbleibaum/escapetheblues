@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using Debug = System.Diagnostics.Debug;
+﻿using UnityEngine;
 
 namespace Presentation
 {

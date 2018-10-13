@@ -1,7 +1,5 @@
-﻿using System;
-using Presentation;
+﻿using Presentation;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Logic
