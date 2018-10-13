@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Presentation
 {
@@ -16,69 +15,69 @@ namespace Presentation
         public float SlideY;
         public float SlideSpeed;
 
-        private float currentSlide;
-        private Vector2 slideDirection;
-        private bool destroyAfterSlide;
+        private float _currentSlide;
+        private Vector2 _slideDirection;
+        private bool _destroyAfterSlide;
 
         public void TransitionIn(Direction direction)
         {
-            destroyAfterSlide = false;
+            _destroyAfterSlide = false;
             switch (direction)
             {
                 case Direction.Left:
-                    currentSlide = SlideX;
-                    slideDirection = new Vector2(1, 0);
+                    _currentSlide = SlideX;
+                    _slideDirection = new Vector2(1, 0);
                     break;
                 case Direction.Right:
-                    currentSlide = SlideX;
-                    slideDirection = new Vector2(-1, 0);
+                    _currentSlide = SlideX;
+                    _slideDirection = new Vector2(-1, 0);
                     break;
                 case Direction.Up:
-                    currentSlide = SlideY;
-                    slideDirection = new Vector2(0, -1);
+                    _currentSlide = SlideY;
+                    _slideDirection = new Vector2(0, -1);
                     break;
                 case Direction.Down:
-                    currentSlide = SlideY;
-                    slideDirection = new Vector2(0, 1);
+                    _currentSlide = SlideY;
+                    _slideDirection = new Vector2(0, 1);
                     break;
             }
         }
     
         public void TransitionOut(Direction direction)
         {
-            destroyAfterSlide = true;
+            _destroyAfterSlide = true;
             switch (direction)
             {
                 case Direction.Left:
-                    currentSlide = SlideX;
-                    slideDirection = new Vector2(-1, 0);
+                    _currentSlide = SlideX;
+                    _slideDirection = new Vector2(-1, 0);
                     break;
                 case Direction.Right:
-                    currentSlide = SlideX;
-                    slideDirection = new Vector2(1, 0);
+                    _currentSlide = SlideX;
+                    _slideDirection = new Vector2(1, 0);
                     break;
                 case Direction.Up:
-                    currentSlide = SlideY;
-                    slideDirection = new Vector2(0, 1);
+                    _currentSlide = SlideY;
+                    _slideDirection = new Vector2(0, 1);
                     break;
                 case Direction.Down:
-                    currentSlide = SlideY;
-                    slideDirection = new Vector2(0, -1);
+                    _currentSlide = SlideY;
+                    _slideDirection = new Vector2(0, -1);
                     break;
             }
         }
 
         private void Update()
         {
-            if (currentSlide > 0)
+            if (_currentSlide > 0)
             {
-                var slide = Math.Min(currentSlide, SlideSpeed * Time.deltaTime);
-                var slideVec = slide * slideDirection;
+                var slide = Math.Min(_currentSlide, SlideSpeed * Time.deltaTime);
+                var slideVec = slide * _slideDirection;
 
                 gameObject.transform.Translate(slideVec);
 
             } 
-            else if (destroyAfterSlide)
+            else if (_destroyAfterSlide)
             {
                 Destroy(gameObject);
             }
