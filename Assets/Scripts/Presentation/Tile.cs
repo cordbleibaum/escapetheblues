@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Debug = System.Diagnostics.Debug;
 
 namespace Presentation
 {
@@ -10,77 +11,17 @@ namespace Presentation
     
     public class Tile : MonoBehaviour
     {
+        public int PosX;
+        public int PosY;
 
-        public float SlideX;
-        public float SlideY;
-        public float SlideSpeed;
+        public float SpaceX;
+        public float SpaceY;
 
-        private float _currentSlide;
-        private Vector2 _slideDirection;
-        private bool _destroyAfterSlide;
-
-        public void TransitionIn(Direction direction)
+        private void Start()
         {
-            _destroyAfterSlide = false;
-            switch (direction)
-            {
-                case Direction.Left:
-                    _currentSlide = SlideX;
-                    _slideDirection = new Vector2(1, 0);
-                    break;
-                case Direction.Right:
-                    _currentSlide = SlideX;
-                    _slideDirection = new Vector2(-1, 0);
-                    break;
-                case Direction.Up:
-                    _currentSlide = SlideY;
-                    _slideDirection = new Vector2(0, -1);
-                    break;
-                case Direction.Down:
-                    _currentSlide = SlideY;
-                    _slideDirection = new Vector2(0, 1);
-                    break;
-            }
-        }
-    
-        public void TransitionOut(Direction direction)
-        {
-            _destroyAfterSlide = true;
-            switch (direction)
-            {
-                case Direction.Left:
-                    _currentSlide = SlideX;
-                    _slideDirection = new Vector2(-1, 0);
-                    break;
-                case Direction.Right:
-                    _currentSlide = SlideX;
-                    _slideDirection = new Vector2(1, 0);
-                    break;
-                case Direction.Up:
-                    _currentSlide = SlideY;
-                    _slideDirection = new Vector2(0, 1);
-                    break;
-                case Direction.Down:
-                    _currentSlide = SlideY;
-                    _slideDirection = new Vector2(0, -1);
-                    break;
-            }
-        }
+            var spriteRenderer = GetComponent<SpriteRenderer>();
 
-        private void Update()
-        {
-            if (_currentSlide > 0)
-            {
-                var slide = Math.Min(_currentSlide, SlideSpeed * Time.deltaTime);
-                var slideVec = slide * _slideDirection;
-
-                gameObject.transform.Translate(slideVec);
-
-            } 
-            else if (_destroyAfterSlide)
-            {
-                Destroy(gameObject);
-            }
+            transform.Translate(new Vector2(PosX*SpaceX, PosY*SpaceY));
         }
     }
 }
