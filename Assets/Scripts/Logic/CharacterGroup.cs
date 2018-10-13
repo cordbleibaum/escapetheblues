@@ -9,7 +9,7 @@ namespace Logic
 
 		private void Start()
 		{
-			instance = this.instance;
+			instance = this;
 			timmy.sadness = -25;
 			sister.sadness = 25;
 			uncle.sadness = 0;
