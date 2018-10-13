@@ -1,0 +1,44 @@
+Bullies:
+	Bullies appear
+	Timmy: "Oh nein!"
+	AlphaBully: "Wen haben wir denn da?"
+	options:
+		a) erstarren/tot stellen
+			Alphabully: "Awww, hat es dem Furz die Sprache verschlagen? Du
+						kannst froh sein, dass hier so viel los ist. Bis
+						Montag, Loser."
+			Timmy: "So ein Arsch."
+			Timmy +20 bp
+		b) antworten
+			Timmy: "Mich, meinen Onkel, meine Schwester und Opa."
+			Alphabully: "Ähm... okay. Ja. Das seh ich."
+			Timmy: "Wieso fragst du das dann?"
+			Alphabully: "Weil das die coolen Typen in Filmen immer machen und
+				ich cool bin."
+			Timmy: "Sagt wer?"
+			Alphabully: "ICH sag das. Wenn hier nicht so viele Leute wären,
+				würde ich dir jetzt so eine rein hauen."
+			Timmy +15 bp
+		c) Timmys Onkel assist
+			Timmy: "Onkel, hilf mir!"
+			Timmys Onkel: "Was ist eigentlich kaputt bei dir? Die sehen nicht mal für
+				dein Alter bedrohlich aus. Bist du denn zu einem kompletten
+				Weichei erzogen worden?!"
+			Alphabully: "Wow, besser hätte ich das nicht machen können. Können
+				Sie mir das beibringen?"
+			Timmys Onkel: "Ach, verpiss dich."
+			Alphabully: "Pf, okay. Wir sehen uns Montag Timmy."
+			Timmy +25 bp
+		d) Timmys Schwester assist (falls Timmys Schwester bp unter 50)
+			Timmys Schwester: "Wow. Ihr geht in dieseTimmye Klasse und du kannst dir nicht mal
+				seinen Namen merken? Kein Wunder, dass du Depp 1 und Depp 2
+				als Begleitung brauchst. Sind die dir als Zivis zugewiesen
+				worden?"
+			Alphabully: "Wa... Was?..."
+			Timmys Schwester: "Pass auf, ich nehme einfach mal an, dass irgendwas in deinem
+				Leben gerade richtig kaputt ist, aber wenn du Timmy
+				nochmal dumm anmachst gibt es Stress. Geh einfach heim und
+				such dir nen Psychologen, aber lass andere mit deinem Scheiß
+				in Ruhe."
+			Alphabully: "Ich... äh... okay. Kommt, lass abhauen hier."
+			Timmy -15 bp

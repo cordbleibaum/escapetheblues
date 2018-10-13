@@ -1,0 +1,229 @@
+Salatschleuder:
+(nüchtern)
+Timmy -20 bluespunkte
+Timmys Onkel +20 bluespunkte
+Timmys Schwester freut sich über Timmys Onkel bluespunkte -> -5 bluespunkte
+version 1:
+	Timmy: "Schau mal! Ein Piratenschiff!"
+	Timmy rennt zu Salatschleuder, während Rest langsam darauf zugeht
+	Timmys Onkel: "Ein Piratenschiff? Das klingt ja halb so schli... Oh verdammt."
+	Timmys Schwester: "Sieht doch wunderbar aus. Ich wünsche dir viel Spaß, während ich mich
+		hier unten mit unserem Opa NICHT übergebe."
+	Timmys Opa: "Warum fragt mich eigentlich niemand ob ich mit will?"
+	Timmys Schwester: "Hast du dir das Ding mal angesehen?"
+	Timmys Opa: "Ich will ja auch nicht, aber man kann mich ja wenigstens mal fragen."
+	Timmy: "Schwester, willst du wirklich nicht mit?"
+	Timmys Schwester: "Nein, tut mir leid Kleiner, irgendjemand muss auf den alten Sack
+		aufpassen und du willst doch bestimmt lieber mit deinem Onkel fahren oder?"
+	Timmys Onkel: "Bitte sag nein, bitte sag nein, bitte sag nein."
+	Timmy: "Ja schon, aber nächstes mal fährst du mit, okay?"
+	Timmys Opa: "Was redet ihr da über mich?!"
+	Timmys Schwester: "Nichts Timmys Opa"
+	Timmys Opa: "WAS?!"
+	Timmys Schwester: "NICHTS GP!"
+version 2:
+	Timmys Onkel: "Oh verdammt. Haben die hier denn wirklich jede noch so unnötige
+Attraktion?"
+	Timmys Schwester: "Tja, das Leben ist scheiße und deines ganz besonders."
+	Timmys Opa: "WAS IST MIT DEINER MUTTER?"
+	Timmy: "Hä? Ist was mit Mama?"
+	Timmys Onkel: "Lass es uns einfach hinter uns bringen."
+	Timmy: "Weißt du, manchmal hab ich das Gefühl, dass du nicht hier sein
+willst."
+	Timmys Onkel: "Ich hasse Jahrmärkte grundsätzlich. Wie kommst du darauf, dass ich
+hier sein will?"
+	Timmy: "Naja wir sind dabei. Reicht das nicht?"
+	Timmys Onkel: "Das macht es nicht b..."
+	Timmys Schwester: "Schnauze, alter Mann. Du wirst deinem Neffen jetzt diesen Gefallen
+		tun und wenn es dich umbringt."
+	Timmys Opa: "WER IST HIER EIN ALTER MANN?!"
+	Timmys Onkel: "Dir würde es doch Gefallen, wenn es mich umbringt. Wahrscheinlich hast
+		du für den Wunsch erst gestern eine Ziege geopfert."
+	Timmys Schwester: "Ja und nein. Die Ziege wäre mir mehr wert als dein
+		Leben."
+	Timmy: "Opfer sagt man nicht, sagt meine Lehrerin immer."
+
+Risenraddo:
+	Timmy: "Ohhh, kore wa Risenraddo?"
+	Timmys Grandpa: "Hai, Risenraddo, desu."
+	Timmys Onkel: "Da ist sie ja. Die Mutter der Langeweile. Zerstörer meiner
+		Wünsche hier frühzeitig wieder zu verschwinden. Knechter der
+		Warteschlangen."
+	Timmy Schwester: "Sakura dewa arimasen."
+	Timmys Onkel: "Die Warteschlange sieht aber wirklich lang aus. Müssen wir
+		das wirklich machen?"
+	Timmy: "Aber ich will doch unbedingt..."
+	Timmys Schwester: "Bin ich die einzige, die bei dem Anblick hungrig wird?"
+	Timmys Opa: "Ich muss dringend pinkeln."
+	Optionen:
+		Pinkelpause+Riesenrad fahren
+			Timmys Ziel erreicht
+			Timmys bp auf 0
+			Timmys Schwester aus Hungergründen +5 bp
+			Timmys Onkel +10 bp für s anstehen
+			Timmys Opa +5 bp für s anstehen
+		Riesenrad fahren
+			Timmys Ziel erreicht
+			Timmys bp auf 0
+			Timmys Schwester aus Hungergründen +5 bp
+			Timmys Onkel +10 bp für s anstehen
+			Timmys Opa +15 bp, weil er sich in die Hose macht und anstehen muss
+		Pinkelpause
+			Timmys Onkel -10 bp aus Erleichterung (macht dann zusätzliche 10bp
+				wenn man später doch Riesenrad fährt)
+		keine Pinkelpause
+			Timmys Onkel -10 bp aus Erleichterung(macht dann zusätzliche 10bp
+				wenn man später doch Riesenrad fährt)
+			Timmys Opa +10 bp, weil er sich in die Hose macht
+
+Bierzelt:
+	Timmys Onkel: "Endlich was vernünftiges!"
+	Timmys Opa: "Auf in den Kampf! Für den Alkohol!"
+	Timmys Schwester: "Opa bitte. Du warst nicht mal in einem Krieg."
+	Timmys Onkel und Opa verschwinden im Bierzelt
+	Timmy: "Was ist an Alkohol so toll?"
+	Timmys Schwester: "Nichts. Die beiden denken nur sie könnten damit ihrer
+		jämmerlichen Existenz für einen flüchtigen Moment entkommen, indem sie ihre
+		Seele und ihren Körper mit Nervengift füllen, bis sie ihre irdischen
+		Probleme vergessen.
+	Timmy: "Hä?"
+	Timmys Schwester: "Genau, Timmy. Genau das."
+
+Geisterbahn:
+	Timmys Schwester: "OH, können wir das bitte fahren?!
+		Äh, ich meine Timmy könnte das gefallen."
+	Timmys Onkel: "Klar. Wenn du willst können wir auch schauen ob sie dort
+		Kinderkostüme für kleine Hexen haben, aber ich weiß nicht, ob sie
+		welche in deiner Größe haben."
+	Timmys Schwester: "Hey, ich hab nur gehört, dass die gut sein soll und
+		Timmy mag doch Geisterbahnen so gerne."
+	Timmy: "Mag ich gar ni..."
+	Timmys Schwester: "Shhh!"
+	Timmys Opa: "Shhh! Über was reden wir gerade?"
+	Timmy: "Nichts, Opa. Komm einfach mit."
+	Steigen ein -> Teleport zur Achterbahn.
+	Timmys Opa: "Heilige Scheiße! Wie sind wir denn hier gelandet?!"
+	Timmy: "Was meinst du?"
+	Timmys Onkel: "Ach, lass ihn reden. Vielleicht wird er einfach langsam senil."
+	Timmys Schwester: "Nett ist was anderes, aber da hat er wahrscheinlich recht."
+	Timmys Opa: "Was redet ihr da über mich?"
+
+	Geisterbahnziel von Timmys Schwester erfüllt
+	bp von Timmys Schwester auf null
+	-10 bp für Timmy
+	+10 bp für Onkel
+	+5 bp für Opa, weil ignoriert
+
+Achterbahn:
+	Timmys Opa: "... und da stand dann plötzlich eure Großmutter."
+	Timmys Schwester: "Ja, ist gut, wir haben die Geschichte alleine heute
+		bestimmt schon fünf mal gehört."
+	Timmy: "Ich will Achterbahn fahren!"
+	Timmys Onkel: "Du willst immer irgendwas."
+	Timmys Schwester: "Hör nicht auf den bösen Mann. Der ist nur sauer, weil
+		er nicht zu Hause auf der Couch liegen und sich selbst bemitleiden kann."
+	Timmys Onkel: "Du kleine..."
+	Timmys Opa: "Oh schaut mal, eine Achterbahn!"
+	Timmy: "Siehst du? Er versteht mich."
+	Timmys Onkel: "Ach, verdammt."
+	Steigen ein -> Teleportation zur Geisterbahn
+	Timmys Opa: "Also bei uns war wenigstens noch alles aus Holz."
+	Timmys Schwester: "Die Geisterbahn war der Hammer, oder Timmy?"
+	Timmy: "Ich weiß nicht so recht."
+	Timmys Onkel: "Ich glaube hier hat nur eine von uns eine nahezu kindische
+		Freude an den Plastik-Zombies."
+	Timmys Schwester: "Immerhin muss ich mich nicht über Teenager lustig
+		machen um mich nicht erbärmlich zu fühlen."
+
+	Geisterbahnziel von Timmys Schwester erfüllt
+	bp von Timmys Schwester auf null
+	-10 bp für Timmy
+	+10 bp für Onkel
+	+5 bp für Opa, weil ignoriert
+
+Autoscooter:
+	Timmys Opa: "Endlich mal was zum Randalieren!"
+	Timmy: "Ähm, Opa? Geht's dir noch gut?"
+	Timmys Opa: "Hier gibt es eine Gelegenheit fremde Menschen zu rammen und
+		du fragst ob es mir gut geht? Mir ging es nie besser! Komm mit, lass
+		uns ein paar Kinder drangsalieren!"
+	Timmy: "Helft mir!"
+	Timmys Schwester: "Sorry, da musst du jetzt durch. Ich werde dich nie
+		vergessen!"
+	Timmys Opa und Timmy verschwinden im Autoscooter
+	Timmys Onkel: "Wenigstens werde ich mal aus der Sache raus gelassen."
+	Fremde Stimme 1: "AHHHHHHH EIN WAHNSINNIGER!!1!!elf!"
+	Fremde Stimme 2: "Verdammt, er hat ein Kind als Geisel! Sollen wir die
+		Polizei rufen?"
+	Timmys Schwester: "Naja technisch gesehen macht er nichts Verbotenes.
+		Grade so zumindest."
+
+	Ziel von Opa erfüllt
+	Timmy +10 bp
+	Onkel -10 bp
+
+Wahrsager:
+	Timmy: "Hey, Onkel. Wolltest du nicht zu der Wahrsagerin?"
+	Timmys Schwester: "Bitte was?! Ich lach mich kaputt."
+	Timmys Onkel: "Timmy, was zur Hölle? Ich hab' dir gesagt, dass das unter
+		uns bleiben muss! Mach dich nur über mich lustig. Zu deiner
+		Information: diese Wahrsagerin hat Psychologie studiert."
+	Timmys Schwester: "Und statt eine seriöse Therapeutin zu werden, wurde sie
+		Wahrsagerin auf einem Jahrmarkt? Inwiefern macht das irgendwas besser?"
+	Timmys Onkel: "Ach halt doch die Klappe."
+	Timmys Onkel verschwindet im Zelt
+	Wahrsagerin: "Also, erzählen Sie mir doch erst einmal von ihren Onkel-Events."
+	Timmys Onkel: "Von meinen WAS?"
+	Wahrsagerin: "Sie wissen genau was ich meine. Zeigen sie mir doch an
+		dieser Puppe, wo sie berührt worden sind."
+	Timmys Onkel: "Ich bin nie berührt worden. Wovon reden Sie? Verwechseln
+		Sie mich mit irgendjemandem?"
+	Wahrsagerin: "Oh... Meine Kugel sagt mir einfach, dass Ihr Charakter stark
+		beeinträchtigt ist auf eine Weise, die entweder durch ein Kindheitstrauma
+		ausgelöst worden ist oder..."
+	Timmys Onkel: "Ja, oder...?"
+	Wahrsagerin: "Naja, oder Sie sind einfach ein Arsch."
+	Timmys Onkel: "Das hör ich mir nicht länger an!"
+	(Wahrsagerin: "Viel Spaß noch mit ihrer Familie, Timmys Onkel!")
+
+	Onkel +20 bp
+	Schwester -10 bp (amüsiert)
+
+Ponyhof:
+	Timmys Opa: "Oh schau mal Timmys Schwester! Ponys! Du liebst doch Ponys."
+	Timmys Schwester: "Nein, tu ich nicht. Seh ich aus wie zwölf?"
+	Timmy: "Was hat das denn damit zu tun?"
+	Timmys Schwester: "Alles."
+	Timmy: "Warum?"
+	Timmys Schwester: "Ähm... weil halt."
+	Timmys Onkel: "Ich verneige mich vor der Meisterin der logischen
+		Herleitung."
+	Timmys Schwester: "Oh, shut up. Ich will auf jeden Fall keine dämlichen
+		Ponys reiten"
+	Timmy: "Bist du dir sicher? Ich würde nämlich echt gerne, aber ich trau
+		mich alleine nicht."
+	Timmys Schwester: "Hm... weißt du was? Okay."
+
+	Schwester -15 bp
+	Timmy -5 bp
+
+Bühne:
+	Barusu Feru: "Blues, blues, blues, blues, blues, blues, blues, blues, blues."
+	Timmys Opa: "Gott, ich liebe dieses Lied.
+				Nein, warte... ich HASSE dieses Lied."
+	Timmys Schwester: "Da sind wir uns einig."
+	Timmys Onkel: "Zu diesem Lied hat eure Tante mit mir Schluss gemacht."
+	Timmys Schwester: "Ex-Tante meinst du."
+	Timmys Onkel: "Wirklich? Musste das sein?"
+	Timmys Schwester: "Es ist jetzt Jahre her. Komm damit klar."
+	Timmy: "Das Lied macht mich traurig... Ich will hier weg."
+
+	alle +10 bp
+
+Hammer:
+	Timmy: "Hey, da kann man schauen wie stark man ist!"
+	Timmys Onkel: "Du bist in der Grundschule. Wie stark kannst du schon
+		sein?"
+	Timmys Schwester: "Wow! Warum hat dich deine Ex nur verlassen? Es ist mir
+		ein Rätsel."
+	T
