@@ -15,17 +15,17 @@ namespace Logic
         public Vector2Int CurrentPosition;
         public Tile CurrentTile;
 
-        private int sadness;
+        private int _sadness;
     
         private void Start()
         {
-            sadness = StartSadness;
+            _sadness = StartSadness;
         }
 
         public void GainSadness(int amount)
         {
-            sadness += amount;
-            if (sadness > MaxSadness)
+            _sadness += amount;
+            if (_sadness > MaxSadness)
             {
                 // GameOver
             }
