@@ -24,14 +24,14 @@ namespace Presentation
 
         public int start;
         public DialogueLine[] lines;
-
+        public GameObject[] optionButtons;
+        
         public TextMeshProUGUI text;
 
         private DialogueLine current;
-        
-        private void OnEnable()
+
+        private void UpdateText()
         {
-            current = lines[0];
             text.text = current.text;
             if (!current.isLast)
             {
@@ -41,6 +41,40 @@ namespace Presentation
             {
                 World.instance.canSlide = true; 
             }
+
+            if (optionButtons.Length > 0)
+            {
+                optionButtons[0].SetActive(current.options.Length > 0);
+                optionButtons[1].SetActive(current.options.Length > 1);
+                optionButtons[2].SetActive(current.options.Length > 2);
+                optionButtons[3].SetActive(current.options.Length > 3);
+            }
+
+            if (current.options.Length > 0)
+            {
+                optionButtons[0].GetComponent<TextMeshProUGUI>().text = current.options[0].text;
+            }
+            
+            if (current.options.Length > 1)
+            {
+                optionButtons[1].GetComponent<TextMeshProUGUI>().text = current.options[1].text;
+            }
+            
+            if (current.options.Length > 2)
+            {
+                optionButtons[2].GetComponent<TextMeshProUGUI>().text = current.options[2].text;
+            }
+            
+            if (current.options.Length > 3)
+            {
+                optionButtons[3].GetComponent<TextMeshProUGUI>().text = current.options[3].text;
+            }
+        }
+        
+        private void OnEnable()
+        {
+            current = lines[0];
+            UpdateText();
         }
 
         public void Next()
@@ -48,15 +82,16 @@ namespace Presentation
             if (current.options.Length == 0)
             {
                 current = lines[current.next];
-                text.text = current.text;
-                if (!current.isLast)
-                {
-                    World.instance.canSlide = false;
-                }
-                else
-                {
-                    World.instance.canSlide = true; 
-                } 
+                UpdateText();
+            }
+        }
+
+        public void UseOption(int number)
+        {
+            if (number < current.options.Length)
+            {
+                current = lines[current.options[number].next];
+                UpdateText();
             }
         }
     }
