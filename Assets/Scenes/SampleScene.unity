@@ -534,46 +534,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &717667352
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 717667353}
-  - component: {fileID: 717667354}
-  m_Layer: 0
-  m_Name: Action 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &717667353
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 717667352}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2032463505}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &717667354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 717667352}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2d26e509ea654292addfb535026cc6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &718751299
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,46 +858,314 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sadness: 0
   goalFulfilled: 0
---- !u!1 &1198448169
-GameObject:
+--- !u!1001 &1175372917
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1198448171}
-  - component: {fileID: 1198448170}
-  m_Layer: 0
-  m_Name: Action 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1198448170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1198448169}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31fc5fa8b338e4861bf79562093767f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1198448171
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1198448169}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2032463505}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458258789712612, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458258789712612, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458258789712612, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458258789712612, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458258789712612, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458258789712612, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458258789712612, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458258789712612, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[2].text
+      value: "bestimmt schon f\xFCnf mal geh\xF6rt.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[2].next
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[2].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[3].text
+      value: 'Timmy: "Ich will Achterbahn fahren!"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[3].next
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[3].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[4].text
+      value: 'Timmys Onkel: "Du willst immer irgendwas."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[4].next
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[4].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[5].text
+      value: "Timmys Schwester: \"H\xF6r nicht auf den b\xF6sen Mann. Der ist nur
+        sauer, weil"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[5].next
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[5].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[6].text
+      value: er nicht zu Hause auf der Couch liegen und sich selbst bemitleiden kann."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[6].next
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[6].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[7].text
+      value: 'Timmys Onkel: "Du kleine..."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[7].next
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[7].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[8].text
+      value: 'Timmys Opa: "Oh schaut mal, eine Achterbahn!"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[8].next
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[8].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[9].text
+      value: 'Timmy: "Siehst du? Er versteht mich."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[9].next
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[9].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[10].text
+      value: 'Timmys Onkel: "Ach, verdammt."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[10].next
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[10].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[11].text
+      value: 'Timmys Opa: "Also bei uns war wenigstens noch alles aus Holz."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[11].next
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[11].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[12].text
+      value: 'Timmys Schwester: "Die Geisterbahn war der Hammer, oder Timmy?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[12].next
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[12].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[13].text
+      value: "Timmy: \"Ich wei\xDF nicht so recht.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[13].next
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[13].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[14].text
+      value: 'Timmys Onkel: "Ich glaube hier hat nur eine von uns eine nahezu kindische'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[14].next
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[14].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[15].text
+      value: Freude an den Plastik-Zombies."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[15].next
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[15].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[16].text
+      value: "Timmys Schwester: \"Immerhin muss ich mich nicht \xFCber Teenager lustig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[16].next
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[16].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[17].text
+      value: "machen um mich nicht erb\xE4rmlich zu f\xFChlen.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[17].next
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[17].isLast
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[0].text
+      value: "Timmys Opa: \"... und da stand dann pl\xF6tzlich eure Gro\xDFmutter.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[1].text
+      value: 'Timmys Schwester: "Ja, ist gut, wir haben die Geschichte alleine heute'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[1].next
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767929293616414, guid: 30702b4f09ef5435ea69598d0def9ff4,
+        type: 2}
+      propertyPath: lines.Array.data[1].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1316982218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,46 +1582,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sadness: 0
   goalFulfilled: 0
---- !u!1 &1679879410
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1679879411}
-  - component: {fileID: 1679879412}
-  m_Layer: 0
-  m_Name: Action 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1679879411
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1679879410}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2032463505}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1679879412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1679879410}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e7920a8f0d9e4afcaf5246ff8a3473a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1684115588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,46 +1809,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1877949141
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1877949142}
-  - component: {fileID: 1877949143}
-  m_Layer: 0
-  m_Name: Action 4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1877949142
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1877949141}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2032463505}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1877949143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1877949141}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e081584f8c0041ec804450d868a6040, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1895428806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,115 +1924,3 @@ Transform:
   m_Father: {fileID: 1358002411}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2032463504
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[11].options.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[12].options.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[13].options.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[14].options.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4884145257554672, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4884145257554672, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4884145257554672, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4884145257554672, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4884145257554672, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4884145257554672, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4884145257554672, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4884145257554672, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[11].text
-      value: '...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[12].text
-      value: '...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[13].text
-      value: '...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[14].text
-      value: '...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 224220958816958398, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[11].nextAction
-      value: 
-      objectReference: {fileID: 1198448169}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[12].nextAction
-      value: 
-      objectReference: {fileID: 717667352}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[13].nextAction
-      value: 
-      objectReference: {fileID: 1679879410}
-    - target: {fileID: 114060421166490018, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-        type: 2}
-      propertyPath: lines.Array.data[14].nextAction
-      value: 
-      objectReference: {fileID: 1877949141}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
-  m_IsPrefabAsset: 0
---- !u!4 &2032463505 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4156690095244554, guid: 75faff996f6cc4a319ed4c5e3278ba6a,
-    type: 2}
-  m_PrefabInternal: {fileID: 2032463504}
