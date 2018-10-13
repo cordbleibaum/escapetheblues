@@ -624,9 +624,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6087ebb51d44698606715d9cfbd0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slideX: 9.9725
-  slideY: 5.3
-  slideSpeed: 8
+  slideX: 9.95
+  slideY: 6.625
+  slideSpeed: 10
 --- !u!4 &1874007893
 Transform:
   m_ObjectHideFlags: 0
