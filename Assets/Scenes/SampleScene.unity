@@ -218,8 +218,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6dc0cd0957634f5f81569b528379979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSadness: 0
-  maxSadness: 0
+  StartSadness: 0
+  MaxSadness: 100
+  Width: 4
+  Height: 4
+  Tiles: []
+  CurrentPosition: {x: 0, y: 0}
+  CurrentTile: {fileID: 0}
 --- !u!4 &1316982220
 Transform:
   m_ObjectHideFlags: 0
@@ -244,3 +249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63b5dde48f534e4aad46f662a7271bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  World: {fileID: 1316982219}
+  Characters: []
+  GoalPosition: {x: 0, y: 0}
