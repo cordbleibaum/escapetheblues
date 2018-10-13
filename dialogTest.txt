@@ -1,93 +1,94 @@
-gg := goth girl
-lb := little boy
-u := uncle
-gp := grandpa
+Timmys Schwester := goth girl
+Timmy := little boy
+Timmys Onkel := uncle
+Timmys Opa := grandpa
 
 Event Salatschleuder:
 (nüchtern)
-lb -20 bluespunkte
-u +20 bluespunkte
-gg freut sich über u bluespunkte -> -5 bluespunkte
+Timmy -20 bluespunkte
+Timmys Onkel +20 bluespunkte
+Timmys Schwester freut sich über Timmys Onkel bluespunkte -> -5 bluespunkte
 version 1:
-	lb: "Schau mal! Ein Piratenschiff!"
-	lb rennt zu Salatschleuder, während rest langsam darauf zugeht
-	u: "Ein Piratenschiff? Das klingt ja halb so schli... Oh verdammt."
-	gg: "Sieht doch wunderbar aus. Ich wünsche dir viel Spaß, während ich mich
-hier unten mit gp NICHT übergebe."
-	gp: "Warum fragt mich eigentlich niemand ob ich mit will?"
-	gg: "Hast du dir das Ding mal angesehen?"
-	gp: "Ich will ja auch nicht, aber man kann mich ja wenigstens mal fragen."
-	lb: "gg, willst du wirklich nicht mit?"
-	gg: "Nein, tut mir leid Kleiner, irgendjemand muss auf den alten Sack
-aufpassen und du willst doch bestimmt lieber mit u fahren oder?"
-	u: "Bitte sag nein, bitte sag nein, bitte sag nein."
-	lb: "Ja schon, aber nächstes mal fährst du mit, okay?"
-	gp: "Was redet ihr da über mich?!"
-	gg: "Nichts gp"
-	gp: "WAS?!"
-	gg: "NICHTS GP!"
+	Timmy: "Schau mal! Ein Piratenschiff!"
+	Timmy rennt zu Salatschleuder, während Rest langsam darauf zugeht
+	Timmys Onkel: "Ein Piratenschiff? Das klingt ja halb so schli... Oh verdammt."
+	Timmys Schwester: "Sieht doch wunderbar aus. Ich wünsche dir viel Spaß, während ich mich
+		hier unten mit unserem Opa NICHT übergebe."
+	Timmys Opa: "Warum fragt mich eigentlich niemand ob ich mit will?"
+	Timmys Schwester: "Hast du dir das Ding mal angesehen?"
+	Timmys Opa: "Ich will ja auch nicht, aber man kann mich ja wenigstens mal fragen."
+	Timmy: "Schwester, willst du wirklich nicht mit?"
+	Timmys Schwester: "Nein, tut mir leid Kleiner, irgendjemand muss auf den alten Sack
+		aufpassen und du willst doch bestimmt lieber mit deinem Onkel fahren oder?"
+	Timmys Onkel: "Bitte sag nein, bitte sag nein, bitte sag nein."
+	Timmy: "Ja schon, aber nächstes mal fährst du mit, okay?"
+	Timmys Opa: "Was redet ihr da über mich?!"
+	Timmys Schwester: "Nichts Timmys Opa"
+	Timmys Opa: "WAS?!"
+	Timmys Schwester: "NICHTS GP!"
 version 2:
-	u: "Oh verdammt. Haben die hier denn wirklich jede noch so unnötige
+	Timmys Onkel: "Oh verdammt. Haben die hier denn wirklich jede noch so unnötige
 Attraktion?"
-	gg: "Tja, das Leben ist scheiße und deines ganz besonders."
-	gp: "WAS IST MIT DEINER MUTTER?"
-	lb: "Hä? Ist was mit Mama?"
-	u: "Lass es uns einfach hinter uns bringen."
-	lb: "Weißt du, manchmal hab ich das Gefühl, dass du nicht hier sein
+	Timmys Schwester: "Tja, das Leben ist scheiße und deines ganz besonders."
+	Timmys Opa: "WAS IST MIT DEINER MUTTER?"
+	Timmy: "Hä? Ist was mit Mama?"
+	Timmys Onkel: "Lass es uns einfach hinter uns bringen."
+	Timmy: "Weißt du, manchmal hab ich das Gefühl, dass du nicht hier sein
 willst."
-	u: "Ich hasse Jahrmärkte grundsätzlich. Wie kommst du darauf, dass ich
+	Timmys Onkel: "Ich hasse Jahrmärkte grundsätzlich. Wie kommst du darauf, dass ich
 hier sein will?"
-	lb: "Naja wir sind dabei. Reicht das nicht?"
-	u: "Das macht es nicht b..."
-	gg: "Schnauze, alter Mann. Du wirst deinem Neffen jetzt diesen Gefallen
-tun und wenn es dich umbringt."
-	gp: "WER IST HIER EIN ALTER MANN?!"
-	u: "Dir würde es doch Gefallen, wenn es mich umbringt. Wahrscheinlich hast
-du für den Wunsch erst gestern eine Ziege geopfert."
-	gg: "Ja und nein. Die Ziege wäre mir mehr wert."
-	lb: "Opfer sagt man nicht, sagt meine Lehrerin immer."
+	Timmy: "Naja wir sind dabei. Reicht das nicht?"
+	Timmys Onkel: "Das macht es nicht b..."
+	Timmys Schwester: "Schnauze, alter Mann. Du wirst deinem Neffen jetzt diesen Gefallen
+		tun und wenn es dich umbringt."
+	Timmys Opa: "WER IST HIER EIN ALTER MANN?!"
+	Timmys Onkel: "Dir würde es doch Gefallen, wenn es mich umbringt. Wahrscheinlich hast
+		du für den Wunsch erst gestern eine Ziege geopfert."
+	Timmys Schwester: "Ja und nein. Die Ziege wäre mir mehr wert als dein
+		Leben."
+	Timmy: "Opfer sagt man nicht, sagt meine Lehrerin immer."
 
 PokemonFight:
 	Bullies appear
-	lb: "Oh nein!"
+	Timmy: "Oh nein!"
 	AlphaBully: "Wen haben wir denn da?"
 	options:
 		a) erstarren/tot stellen
 			Alphabully: "Awww, hat es dem Furz die Sprache verschlagen? Du
 						kannst froh sein, dass hier so viel los ist. Bis
 						Montag, Loser."
-			lb: "So ein Arsch."
-			lb +20 bp
+			Timmy: "So ein Arsch."
+			Timmy +20 bp
 		b) antworten
-			lb: "Mich, meinen Onkel, meine Schwester und Opa."
+			Timmy: "Mich, meinen Onkel, meine Schwester und Opa."
 			Alphabully: "Ähm... okay. Ja. Das seh ich."
-			lb: "Wieso fragst du das dann?"
+			Timmy: "Wieso fragst du das dann?"
 			Alphabully: "Weil das die coolen Typen in Filmen immer machen und
 				ich cool bin."
-			lb: "Sagt wer?"
+			Timmy: "Sagt wer?"
 			Alphabully: "ICH sag das. Wenn hier nicht so viele Leute wären,
 				würde ich dir jetzt so eine rein hauen."
-			lb +15 bp
-		c) u assist
-			lb: "Onkel, hilf mir!"
-			u: "Was ist eigentlich kaputt bei dir? Die sehen nicht mal für
+			Timmy +15 bp
+		c) Timmys Onkel assist
+			Timmy: "Onkel, hilf mir!"
+			Timmys Onkel: "Was ist eigentlich kaputt bei dir? Die sehen nicht mal für
 				dein Alter bedrohlich aus. Bist du denn zu einem kompletten
 				Weichei erzogen worden?!"
 			Alphabully: "Wow, besser hätte ich das nicht machen können. Können
 				Sie mir das beibringen?"
-			u: "Ach, verpiss dich."
-			Alphabully: "Pf, okay. Wir sehen uns Montag lb."
-			lb +25 bp
-		d) gg assist (falls gg bp unter 50)
-			gg: "Wow. Ihr geht in dieselbe Klasse und du kannst dir nicht mal
+			Timmys Onkel: "Ach, verpiss dich."
+			Alphabully: "Pf, okay. Wir sehen uns Montag Timmy."
+			Timmy +25 bp
+		d) Timmys Schwester assist (falls Timmys Schwester bp unter 50)
+			Timmys Schwester: "Wow. Ihr geht in dieseTimmye Klasse und du kannst dir nicht mal
 				seinen Namen merken? Kein Wunder, dass du Depp 1 und Depp 2
 				als Begleitung brauchst. Sind die dir als Zivis zugewiesen
 				worden?"
 			Alphabully: "Wa... Was?..."
-			gg: "Pass auf, ich nehme einfach mal an, dass irgendwas in deinem
-				Leben gerade richtig kaputt ist, aber wenn du meinen Bruder
+			Timmys Schwester: "Pass auf, ich nehme einfach mal an, dass irgendwas in deinem
+				Leben gerade richtig kaputt ist, aber wenn du Timmy
 				nochmal dumm anmachst gibt es Stress. Geh einfach heim und
 				such dir nen Psychologen, aber lass andere mit deinem Scheiß
 				in Ruhe."
 			Alphabully: "Ich... äh... okay. Kommt, lass abhauen hier."
-			lb -15 bp
+			Timmy -15 bp

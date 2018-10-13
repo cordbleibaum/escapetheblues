@@ -10,6 +10,11 @@ namespace Presentation
         
         private float currentSlide;
         private Vector2 slideDirection;
+
+        public bool CanSlide()
+        {
+            return !(currentSlide > 0.0001f);
+        }
         
         public void Slide(Direction direction)
         {
