@@ -31,6 +31,8 @@ namespace Logic
     
         private void Start()
         {
+            Random.InitState(Time.renderedFrameCount);
+            
             sadness = startSadness;
             
             currentPosition = new Vector2Int(0, 0);
