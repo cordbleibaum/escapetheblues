@@ -523,6 +523,7 @@ MonoBehaviour:
   - {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
   - {fileID: 1539259138660316, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
   - {fileID: 1346391236962274, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+  - {fileID: 1300560705255760, guid: 75faff996f6cc4a319ed4c5e3278ba6a, type: 2}
   startTile: {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
   goalTile: {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
   map: {fileID: 1874007892}
