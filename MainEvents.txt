@@ -186,7 +186,7 @@ Ponyhof:
 	Timmys Schwester: "Hm... weißt du was? Okay."
 
 	Timmys Schwester wollte eigentlich doch reiten: -15 bp
-	Timmy hat Spat: -5 bp
+	Timmy hat Spaß: -5 bp
 
 Bühne:
 	Barusu Feru: "Blues, blues, blues, blues, blues, blues, blues, blues, blues."
@@ -196,8 +196,8 @@ Bühne:
 	Timmys Onkel: "Zu diesem Lied hat eure Tante mit mir Schluss gemacht."
 	Timmys Schwester: "Ex-Tante meinst du."
 	Timmys Onkel: "Wirklich? Musste das sein?"
-	Timmys Schwester: "Es ist jetzt Jahre her. Komm damit klar."
-	Timmy: "Das Lied macht mich traurig... Ich will hier weg."
+	Timmys Schwester: "Komm damit klar."
+	Timmy: "Das Lied macht mich traurig."
 
 	Alle hassen Barusu Feru: +10 bp
 
@@ -208,7 +208,7 @@ Hammer:
 	Timmys Schwester: "Wow! Warum hat dich deine Frau nur verlassen? Es ist mir
 		ein wahres Rätsel."
 	Timmys Opa: "Wer hat wen verlassen? Sie ist gestorben. Niemand hat hier
-		jemanden verlassen. Niemand wollte hier jemanden verlassen"
+		jemanden verlassen. Niemand wollte hier jemanden verlassen."
 	Timmys Schwester: "Warte was?!"
 	Timmy: "Ich will das jetzt ausprobieren!"
 	Timmys Onkel: "Ja, aber dann mach schnell."
@@ -238,3 +238,11 @@ hab noch was vor."
 	(falls Onkel)
 	Timmys Schwester: "Dein verdammter Ernst? Du nörgelst doch schon den
 		ganzen Tag, dass du keinen Bock auf den Jahrmarkt hast."
+
+Eingang:
+	Timmy: "Yaaay, Jahrmarkt!"
+	Timmys Onkel: "Lass es einfach schnell hinter uns bringen."
+	Timmys Schwester: "Was ist eigentlich dein Problem?"
+	Timmys Onkel: "Mein Problem ist, dass ich wegen euch hier sein muss."
+	Timmys Schwester: "Reiß dich einfach zusammen."
+	Timmys Opa: "WAS? Warum sind wir nochmal hier?"
