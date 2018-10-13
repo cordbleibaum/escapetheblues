@@ -22,6 +22,8 @@ namespace Logic
         public TileMap map;
 
         public GameObject arrows;
+
+        public Sprite left, right, top, bottom, bottomLeft, topLeft, topRight, bottomRight;
         
         private int sadness;
         private Vector2Int currentPosition;
@@ -73,6 +75,60 @@ namespace Logic
             goalPosition = new Vector2Int(goalX, goalY);
         }
 
+        private void CheckBorder(int x, int y, GameObject tile)
+        {
+            var sprite = tile.GetComponent<SpriteRenderer>();
+            if (x == 0)
+            {
+                if (y == 0)
+                {
+                    sprite.sprite = bottomLeft;
+                }
+                else
+                {
+                    if (y != height - 1)
+                    {
+                        sprite.sprite = left;
+                    }
+                    else
+                    {
+                        sprite.sprite = topLeft;
+                    }
+                }
+            }
+            else
+            {
+                if (y == 0)
+                {
+                    if (x == width - 1)
+                    {
+                        sprite.sprite = bottomRight;
+                    }
+                    else
+                    {
+                        sprite.sprite = bottom;
+                    }
+                }
+                else
+                {
+                    if (x == width - 1)
+                    {
+                        if (y == height - 1)
+                        {
+                            sprite.sprite = topRight;
+                        }
+                        else
+                        {
+                            sprite.sprite = right;
+                        }
+                    } else if (y == height - 1)
+                    {
+                        sprite.sprite = top;
+                    }
+                }
+            }
+        } 
+        
         private void BuildMap()
         {
             mapTiles = new Tile[width][];
@@ -103,6 +159,7 @@ namespace Logic
                 tileComponent.PosX = x;
                 tileComponent.PosY = y;
                 tileObject.transform.parent = map.gameObject.transform;
+                CheckBorder(x, y, tileObject);
             }
             for (var x = 0; x < width; x++)
             {
@@ -132,22 +189,15 @@ namespace Logic
                     tileComponent.PosX = x;
                     tileComponent.PosY = y;
                     tileObject.transform.parent = map.gameObject.transform;
+                    CheckBorder(x, y, tileObject);
                 }
             }
         }
 
         public int GetSadness()
         {
-            return sadness;
-        }
-
-        public void GainSadness(int amount)
-        {
-            sadness += amount;
-            if (sadness > maxSadness)
-            {
-                // GameOver
-            }
+            return (CharacterGroup.instance.timmy.sadness + CharacterGroup.instance.sister.sadness +
+                CharacterGroup.instance.grandpa.sadness + CharacterGroup.instance.uncle.sadness) / 4;
         }
 
         public void Move(Direction direction)
@@ -198,6 +248,11 @@ namespace Logic
                 currentTile.OnLeave();
                 currentTile = mapTiles[currentPosition.x][currentPosition.y];
                 currentTile.OnGoto();
+
+                CharacterGroup.instance.timmy.sadness += 5;
+                CharacterGroup.instance.sister.sadness += 5;
+                CharacterGroup.instance.uncle.sadness += 5;
+                CharacterGroup.instance.grandpa.sadness += 5;
             }
         }
     }
