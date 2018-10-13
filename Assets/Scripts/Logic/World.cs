@@ -9,7 +9,6 @@ namespace Logic
     {
         public static World instance;
         
-        public int startSadness;
         public int maxSadness = 100;
     
         public int width = 4;
@@ -26,7 +25,6 @@ namespace Logic
 
         public Sprite left, right, top, bottom, bottomLeft, topLeft, topRight, bottomRight;
         
-        private int sadness;
         private Vector2Int currentPosition;
         private Vector2Int goalPosition;
 
@@ -57,8 +55,6 @@ namespace Logic
             instance = this;
             
             Random.InitState(Time.renderedFrameCount);
-            
-            sadness = startSadness;
             
             currentPosition = new Vector2Int(0, 0);
             
