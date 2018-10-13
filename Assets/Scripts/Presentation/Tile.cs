@@ -17,8 +17,6 @@ namespace Presentation
 
         private void Start()
         {
-            var spriteRenderer = GetComponent<SpriteRenderer>();
-
             transform.Translate(new Vector2(PosX*SpaceX, PosY*SpaceY));
         }
     }
