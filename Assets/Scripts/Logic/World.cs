@@ -18,6 +18,7 @@ namespace Logic
         public GameObject[] tiles;
         public GameObject startTile;
         public GameObject goalTile;
+        public GameObject grassTile;
 
         public TileMap map;
 
@@ -191,6 +192,43 @@ namespace Logic
                     tileObject.transform.parent = map.gameObject.transform;
                     CheckBorder(x, y, tileObject);
                 }
+            }
+
+            for (var x = -1; x <= width; x++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = x;
+                tileComponent.PosY = -1;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            
+            for (var x = -1; x <= width; x++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = x;
+                tileComponent.PosY = height;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            
+            for (var y = 0; y <= height; y++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = -1;
+                tileComponent.PosY = y;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            
+                        
+            for (var y = 0; y <= height; y++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = width;
+                tileComponent.PosY = y;
+                tileObject.transform.parent = map.gameObject.transform;
             }
         }
 

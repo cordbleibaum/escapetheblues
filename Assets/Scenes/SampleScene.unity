@@ -665,6 +665,7 @@ MonoBehaviour:
   - {fileID: 1033344862674368, guid: b620f5203fc11478eb8d761ec0401fb0, type: 2}
   startTile: {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
   goalTile: {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
+  grassTile: {fileID: 1740312061397758, guid: 577f71dfc245b43fdb66ba6c415f5e6d, type: 2}
   map: {fileID: 1874007892}
   arrows: {fileID: 1358002410}
   left: {fileID: 21300000, guid: 6d4653b5caf084ea18b6f8ad1aff0b93, type: 3}
