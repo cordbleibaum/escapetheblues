@@ -10,6 +10,10 @@ namespace Logic
 		private void Start()
 		{
 			instance = this.instance;
+			timmy.sadness = -25;
+			sister.sadness = 25;
+			uncle.sadness = 0;
+			grandpa.sadness = 0;
 		}
 
 		public Character timmy;

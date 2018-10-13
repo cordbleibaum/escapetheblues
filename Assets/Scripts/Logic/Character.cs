@@ -4,8 +4,6 @@ namespace Logic
 {
     public class Character : MonoBehaviour
     {
-        public World world;
-    
-        public Vector2Int personalGoalPosition;
+        public int sadness = 0;
     }
 }
