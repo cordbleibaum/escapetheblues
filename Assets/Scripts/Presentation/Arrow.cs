@@ -5,12 +5,12 @@ namespace Presentation
 {
 	public class Arrow : MonoBehaviour
 	{
-		public Direction Direction;
-		public CharacterGroup Group;
+		public Direction direction;
+		public World world;
 	
 		private void OnMouseDown()
 		{
-			Group.Move(Direction);
+			world.Move(direction);
 		}
 	}
 }
