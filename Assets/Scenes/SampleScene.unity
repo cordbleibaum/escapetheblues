@@ -252,6 +252,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &589229807
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114664371099643550, guid: c228a24f1fb1d4d55af0efb9b7a05477,
+        type: 2}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329383382331690, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329383382331690, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329383382331690, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329383382331690, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329383382331690, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329383382331690, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329383382331690, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329383382331690, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664371099643550, guid: c228a24f1fb1d4d55af0efb9b7a05477,
+        type: 2}
+      propertyPath: lines.Array.data[0].text
+      value: "Timmys Onkel: \"Endlich was vern\xFCnftiges!\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664371099643550, guid: c228a24f1fb1d4d55af0efb9b7a05477,
+        type: 2}
+      propertyPath: lines.Array.data[1].isLast
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664371099643550, guid: c228a24f1fb1d4d55af0efb9b7a05477,
+        type: 2}
+      propertyPath: lines.Array.data[1].text
+      value: "Timmys Opa: \"Auf in den Kampf! F\xFCr den Alkohol!\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664371099643550, guid: c228a24f1fb1d4d55af0efb9b7a05477,
+        type: 2}
+      propertyPath: lines.Array.data[1].next
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664371099643550, guid: c228a24f1fb1d4d55af0efb9b7a05477,
+        type: 2}
+      propertyPath: lines.Array.data[2].text
+      value: 'Timmys Schwester: "Opa bitte. Du warst nicht mal in einem Krieg." '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664371099643550, guid: c228a24f1fb1d4d55af0efb9b7a05477,
+        type: 2}
+      propertyPath: lines.Array.data[2].next
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664371099643550, guid: c228a24f1fb1d4d55af0efb9b7a05477,
+        type: 2}
+      propertyPath: lines.Array.data[2].isLast
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c228a24f1fb1d4d55af0efb9b7a05477, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &718751299
 GameObject:
   m_ObjectHideFlags: 0
