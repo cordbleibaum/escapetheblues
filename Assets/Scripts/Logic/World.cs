@@ -54,7 +54,7 @@ namespace Logic
         {
             instance = this;
             
-            Random.InitState(Time.renderedFrameCount);
+            Random.InitState((int)System.DateTime.Now.Ticks);
             
             currentPosition = new Vector2Int(0, 0);
             
