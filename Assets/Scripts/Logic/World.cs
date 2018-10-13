@@ -21,6 +21,8 @@ namespace Logic
 
         public TileMap map;
 
+        public GameObject arrows;
+        
         private int sadness;
         private Vector2Int currentPosition;
         private Vector2Int goalPosition;
@@ -28,9 +30,29 @@ namespace Logic
         private Tile[][] mapTiles;
 
         private Tile currentTile;
-    
+
+        private bool canSlideValue;
+        public bool canSlide
+        {
+            get { return canSlideValue; }
+            set
+            {
+                canSlideValue = value;
+                if (value)
+                {
+                    arrows.SetActive(true);
+                }
+                else
+                {
+                    arrows.SetActive(false);
+                }
+            }
+        }
+
         private void Start()
         {
+            instance = this;
+            
             Random.InitState(Time.renderedFrameCount);
             
             sadness = startSadness;
@@ -41,8 +63,7 @@ namespace Logic
             BuildMap();
             
             currentTile = mapTiles[currentPosition.x][currentPosition.y];
-
-            instance = this;
+            canSlide = true;
         }
 
         private void MakeGoals()
@@ -58,8 +79,36 @@ namespace Logic
             for (var x = 0; x < width; x++)
             {
                 mapTiles[x] = new Tile[height];
+            }
+            while (tiles.Where(t => t.GetComponent<Tile>().isLimited == true).ToArray().Length != 0)
+            {
+                var x = Random.Range(0, width);
+                var y = Random.Range(0, height);
+                while (mapTiles[x][y])
+                {
+                    x = Random.Range(0, width);
+                    y = Random.Range(0, height);
+                }
+                if (x == 0 && y == 0) continue;
+                if (x == goalPosition.x && y == goalPosition.y) continue;
+                var tileNum = 0;
+                while (!tiles[tileNum].GetComponent<Tile>().isLimited)
+                {
+                    tileNum = Random.Range(0, tiles.Length);
+                }
+                GameObject tileObject = Instantiate(tiles[tileNum]);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tiles = tiles.Where(t => t.GetComponent<Tile>().id != tileComponent.id).ToArray();
+                mapTiles[x][y] = tileComponent;
+                tileComponent.PosX = x;
+                tileComponent.PosY = y;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            for (var x = 0; x < width; x++)
+            {
                 for (var y = 0; y < height; y++)
                 {
+                    if (mapTiles[x][y]) continue;
                     GameObject tileObject;
                     if (x == 0 && y == 0)
                     {
@@ -103,8 +152,10 @@ namespace Logic
 
         public void Move(Direction direction)
         {
+            
             Debug.Log(direction);
             
+            if (!canSlide) return;
             if (!map.CanSlide()) return;
 
             var switchTile = false;
