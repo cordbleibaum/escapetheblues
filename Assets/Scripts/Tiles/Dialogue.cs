@@ -49,6 +49,26 @@ namespace Presentation
                 optionButtons[2].SetActive(current.options.Length > 2);
                 optionButtons[3].SetActive(current.options.Length > 3);
             }
+
+            if (current.options.Length > 0)
+            {
+                optionButtons[0].GetComponent<TextMeshProUGUI>().text = current.options[0].text;
+            }
+            
+            if (current.options.Length > 1)
+            {
+                optionButtons[1].GetComponent<TextMeshProUGUI>().text = current.options[1].text;
+            }
+            
+            if (current.options.Length > 2)
+            {
+                optionButtons[2].GetComponent<TextMeshProUGUI>().text = current.options[2].text;
+            }
+            
+            if (current.options.Length > 3)
+            {
+                optionButtons[3].GetComponent<TextMeshProUGUI>().text = current.options[3].text;
+            }
         }
         
         private void OnEnable()
