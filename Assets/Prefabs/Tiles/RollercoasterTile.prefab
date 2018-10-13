@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9e1892e5c14dff891e72941270c4e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 5
 --- !u!114 &114934554160867036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,6 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4cc8e3625ed4b7aa89dfe9230f06f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLimited: 1
+  id: 1
   PosX: 0
   PosY: 0
   SpaceX: 9.95

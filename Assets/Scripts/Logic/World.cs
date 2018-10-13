@@ -7,6 +7,8 @@ namespace Logic
 {
     public class World : MonoBehaviour
     {
+        public static World instance;
+        
         public int startSadness;
         public int maxSadness = 100;
     
@@ -37,6 +39,8 @@ namespace Logic
             BuildMap();
             
             currentTile = mapTiles[currentPosition.x][currentPosition.y];
+
+            instance = this;
         }
 
         private void MakeGoals()
@@ -79,6 +83,11 @@ namespace Logic
                     tileObject.transform.parent = map.gameObject.transform;
                 }
             }
+        }
+
+        public int GetSadness()
+        {
+            return sadness;
         }
 
         public void GainSadness(int amount)
