@@ -13,6 +13,7 @@ namespace Presentation
             public int next;
             public bool isLast;
             public DialogueOption[] options;
+            public GameObject nextAction;
         }
 
         [System.Serializable]
@@ -28,6 +29,8 @@ namespace Presentation
         
         public TextMeshProUGUI text;
 
+        public GameObject nextAction;
+
         private DialogueLine current;
 
         private void UpdateText()
@@ -39,7 +42,9 @@ namespace Presentation
             }
             else
             {
-                World.instance.canSlide = true; 
+                World.instance.canSlide = true;
+                if (nextAction) nextAction.SetActive(true);
+                if (current.nextAction) current.nextAction.SetActive(true);
             }
 
             if (optionButtons.Length > 0)

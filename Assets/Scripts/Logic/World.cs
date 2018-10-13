@@ -9,7 +9,6 @@ namespace Logic
     {
         public static World instance;
         
-        public int startSadness;
         public int maxSadness = 100;
     
         public int width = 4;
@@ -18,6 +17,7 @@ namespace Logic
         public GameObject[] tiles;
         public GameObject startTile;
         public GameObject goalTile;
+        public GameObject grassTile;
 
         public TileMap map;
 
@@ -25,7 +25,6 @@ namespace Logic
 
         public Sprite left, right, top, bottom, bottomLeft, topLeft, topRight, bottomRight;
         
-        private int sadness;
         private Vector2Int currentPosition;
         private Vector2Int goalPosition;
 
@@ -55,9 +54,7 @@ namespace Logic
         {
             instance = this;
             
-            Random.InitState(Time.renderedFrameCount);
-            
-            sadness = startSadness;
+            Random.InitState((int)System.DateTime.Now.Ticks);
             
             currentPosition = new Vector2Int(0, 0);
             
@@ -191,6 +188,43 @@ namespace Logic
                     tileObject.transform.parent = map.gameObject.transform;
                     CheckBorder(x, y, tileObject);
                 }
+            }
+
+            for (var x = -1; x <= width; x++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = x;
+                tileComponent.PosY = -1;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            
+            for (var x = -1; x <= width; x++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = x;
+                tileComponent.PosY = height;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            
+            for (var y = 0; y <= height; y++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = -1;
+                tileComponent.PosY = y;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            
+                        
+            for (var y = 0; y <= height; y++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = width;
+                tileComponent.PosY = y;
+                tileObject.transform.parent = map.gameObject.transform;
             }
         }
 
