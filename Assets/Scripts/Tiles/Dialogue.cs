@@ -1,7 +1,12 @@
+using UnityEngine;
+
 namespace Presentation
 {
-    public class Dialogue
+    public class Dialogue: MonoBehaviour
     {
-        
+        private void Start()
+        {
+            
+        }
     }
 }

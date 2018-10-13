@@ -1,7 +1,12 @@
+using UnityEngine;
+
 namespace Presentation
 {
-    public class Skip
+    public class Skip: MonoBehaviour
     {
-        
+        private void Start()
+        {
+            
+        }
     }
 }
