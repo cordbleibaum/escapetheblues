@@ -22,13 +22,18 @@ namespace Logic
             sadness = StartSadness;
         }
 
-        public void gainSadness(int amount)
+        public void GainSadness(int amount)
         {
             sadness += amount;
             if (sadness > MaxSadness)
             {
                 // GameOver
             }
+        }
+
+        public void Move(Direction direction)
+        {
+            
         }
     }
 }

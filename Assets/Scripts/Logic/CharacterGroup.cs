@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Presentation;
+using UnityEngine;
 
 namespace Logic
 {
@@ -14,6 +15,11 @@ namespace Logic
 			var goalX = World.Width - 1;
 			var goalY = Random.Range(0, World.Height);
 			GoalPosition = new Vector2Int(goalX, goalY);
+		}
+		
+		public void Move(Direction direction)
+		{
+            World.Move(direction);
 		}
 	}
 }

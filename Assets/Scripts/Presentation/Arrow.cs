@@ -1,16 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Logic;
 using UnityEngine;
 
-public class Arrow : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+namespace Presentation
+{
+	public class Arrow : MonoBehaviour
+	{
+		public Direction direction;
+		private CharacterGroup group;
 	
-	// Update is called once per frame
-	void Update () {
-		
+		private void OnMouseDown()
+		{
+			group.Move(direction);
+		}
 	}
 }
