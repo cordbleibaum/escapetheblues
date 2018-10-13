@@ -21,6 +21,8 @@ namespace Logic
 
         public TileMap map;
 
+        public GameObject arrows;
+        
         private int sadness;
         private Vector2Int currentPosition;
         private Vector2Int goalPosition;
@@ -28,9 +30,29 @@ namespace Logic
         private Tile[][] mapTiles;
 
         private Tile currentTile;
-    
+
+        private bool canSlideValue;
+        public bool canSlide
+        {
+            get { return canSlideValue; }
+            set
+            {
+                canSlideValue = value;
+                if (value)
+                {
+                    arrows.SetActive(true);
+                }
+                else
+                {
+                    arrows.SetActive(false);
+                }
+            }
+        }
+
         private void Start()
         {
+            instance = this;
+            
             Random.InitState(Time.renderedFrameCount);
             
             sadness = startSadness;
@@ -41,8 +63,7 @@ namespace Logic
             BuildMap();
             
             currentTile = mapTiles[currentPosition.x][currentPosition.y];
-
-            instance = this;
+            canSlide = true;
         }
 
         private void MakeGoals()
@@ -103,8 +124,10 @@ namespace Logic
 
         public void Move(Direction direction)
         {
+            
             Debug.Log(direction);
             
+            if (!canSlide) return;
             if (!map.CanSlide()) return;
 
             var switchTile = false;
