@@ -1,16 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Presentation;
 using UnityEngine;
 
-public class CharacterGroup : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+namespace Logic
+{
+	public class CharacterGroup : MonoBehaviour
+	{
+		public World World;
 	
-	// Update is called once per frame
-	void Update () {
+		public Character[] Characters;
+		public Vector2Int GoalPosition;
+
+		private void Start()
+		{
+			var goalX = World.Width - 1;
+			var goalY = Random.Range(0, World.Height);
+			GoalPosition = new Vector2Int(goalX, goalY);
+		}
 		
+		public void Move(Direction direction)
+		{
+            World.Move(direction);
+		}
 	}
 }

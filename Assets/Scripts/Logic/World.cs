@@ -1,16 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Presentation;
 using UnityEngine;
 
-public class World : MonoBehaviour
+namespace Logic
 {
-    public int startSadness;
-    public int maxSadness;
-
-    private int sadness;
-
-    private void Start()
+    public class World : MonoBehaviour
     {
-        sadness = startSadness;
+        public int StartSadness;
+        public int MaxSadness = 100;
+    
+        public int Width = 4;
+        public int Height = 4;
+
+        public Tile[] Tiles;
+        public Vector2Int CurrentPosition;
+        public Tile CurrentTile;
+
+        private int _sadness;
+    
+        private void Start()
+        {
+            _sadness = StartSadness;
+        }
+
+        public void GainSadness(int amount)
+        {
+            _sadness += amount;
+            if (_sadness > MaxSadness)
+            {
+                // GameOver
+            }
+        }
+
+        public void Move(Direction direction)
+        {
+            
+        }
     }
 }
