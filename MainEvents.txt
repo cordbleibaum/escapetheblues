@@ -228,3 +228,13 @@ Hammer:
 	Timmys Onkel fühlt sich verarscht: +10 bp
 	Timmys Schwester konnte ihrem Onkel eine auswischen: -10bp
 	Timmys Opa fühlt sich ertappt: +5 bp
+
+Ausgang:
+(falls alle Teilziele erfüllt sind)
+	Timmys Onkel: "Endlich können wir gehen. Wurde auch echt Zeit."
+(else)
+	Zufällige Person mit unerfülltem Ziel: "Wir können noch nicht gehen, ich
+hab noch was vor."
+	(falls Onkel)
+	Timmys Schwester: "Dein verdammter Ernst? Du nörgelst doch schon den
+		ganzen Tag, dass du keinen Bock auf den Jahrmarkt hast."
