@@ -454,6 +454,7 @@ MonoBehaviour:
   height: 4
   tiles:
   - {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
+  - {fileID: 1539259138660316, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}
   startTile: {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
   goalTile: {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
   map: {fileID: 1874007892}
@@ -481,7 +482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63b5dde48f534e4aad46f662a7271bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  World: {fileID: 1316982219}
+  world: {fileID: 0}
+  characters: []
 --- !u!1 &1761344040
 GameObject:
   m_ObjectHideFlags: 0

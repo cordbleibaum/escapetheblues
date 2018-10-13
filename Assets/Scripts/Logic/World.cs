@@ -1,4 +1,5 @@
-﻿using Presentation;
+﻿using System.Linq;
+using Presentation;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -21,6 +22,10 @@ namespace Logic
         private int sadness;
         private Vector2Int currentPosition;
         private Vector2Int goalPosition;
+
+        private Tile[][] mapTiles;
+
+        private Tile currentTile;
     
         private void Start()
         {
@@ -30,6 +35,8 @@ namespace Logic
             
             MakeGoals();
             BuildMap();
+            
+            currentTile = mapTiles[currentPosition.x][currentPosition.y];
         }
 
         private void MakeGoals()
@@ -41,28 +48,35 @@ namespace Logic
 
         private void BuildMap()
         {
+            mapTiles = new Tile[width][];
             for (var x = 0; x < width; x++)
             {
+                mapTiles[x] = new Tile[height];
                 for (var y = 0; y < height; y++)
                 {
-                    GameObject current;
+                    GameObject tileObject;
                     if (x == 0 && y == 0)
                     {
-                        current = Instantiate(startTile);
+                        tileObject = Instantiate(startTile);
                     }
                     else if (x == goalPosition.x && y == goalPosition.y)
                     {
-                        current = Instantiate(goalTile);
+                        tileObject = Instantiate(goalTile);
                     }
                     else
                     {
                         var tileNum = Random.Range(0, tiles.Length);
-                        current = Instantiate(tiles[tileNum]);
+                        tileObject = Instantiate(tiles[tileNum]);
                     }
-                    Tile currentTile = current.GetComponent<Tile>();
-                    currentTile.PosX = x;
-                    currentTile.PosY = y;
-                    current.transform.parent = map.gameObject.transform;
+                    var tileComponent = tileObject.GetComponent<Tile>();
+                    if (tileComponent.isLimited)
+                    {
+                        tiles = tiles.Where(t => t.GetComponent<Tile>().id != tileComponent.id).ToArray();
+                    }
+                    mapTiles[x][y] = tileComponent;
+                    tileComponent.PosX = x;
+                    tileComponent.PosY = y;
+                    tileObject.transform.parent = map.gameObject.transform;
                 }
             }
         }
@@ -79,36 +93,49 @@ namespace Logic
         public void Move(Direction direction)
         {
             Debug.Log(direction);
+            
+            if (!map.CanSlide()) return;
+
+            var switchTile = false;
+            
             switch (direction)
             {
                 case Direction.Left:
                     if (currentPosition.x > 0)
                     {
                         currentPosition.x--;
-                        map.Slide(direction);
+                        switchTile = true;
                     }
                     break;
                 case Direction.Right:
                     if (currentPosition.x < width - 1)
                     {
                         currentPosition.x++;
-                        map.Slide(direction);
+                        switchTile = true;
                     }
                     break;
                 case Direction.Up:
                     if (currentPosition.y < height - 1)
                     {
                         currentPosition.y++;
-                        map.Slide(direction);
+                        switchTile = true;
                     }
                     break;
                 case Direction.Down:
                     if (currentPosition.y > 0)
                     {
                         currentPosition.y--;
-                        map.Slide(direction);
+                        switchTile = true;
                     }
                     break;
+            }
+
+            if (switchTile)
+            {
+                map.Slide(direction);
+                currentTile.OnLeave();
+                currentTile = mapTiles[currentPosition.x][currentPosition.y];
+                currentTile.OnGoto();
             }
         }
     }
