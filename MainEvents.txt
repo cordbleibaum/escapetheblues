@@ -1,37 +1,17 @@
 Salatschleuder:
-(nüchtern)
-Timmy -20 bluespunkte
-Timmys Onkel +20 bluespunkte
-Timmys Schwester freut sich über Timmys Onkel bluespunkte -> -5 bluespunkte
-version 1:
-	Timmy: "Schau mal! Ein Piratenschiff!"
-	Timmy rennt zu Salatschleuder, während Rest langsam darauf zugeht
-	Timmys Onkel: "Ein Piratenschiff? Das klingt ja halb so schli... Oh verdammt."
-	Timmys Schwester: "Sieht doch wunderbar aus. Ich wünsche dir viel Spaß, während ich mich
-		hier unten mit unserem Opa NICHT übergebe."
-	Timmys Opa: "Warum fragt mich eigentlich niemand ob ich mit will?"
-	Timmys Schwester: "Hast du dir das Ding mal angesehen?"
-	Timmys Opa: "Ich will ja auch nicht, aber man kann mich ja wenigstens mal fragen."
-	Timmy: "Schwester, willst du wirklich nicht mit?"
-	Timmys Schwester: "Nein, tut mir leid Kleiner, irgendjemand muss auf den alten Sack
-		aufpassen und du willst doch bestimmt lieber mit deinem Onkel fahren oder?"
-	Timmys Onkel: "Bitte sag nein, bitte sag nein, bitte sag nein."
-	Timmy: "Ja schon, aber nächstes mal fährst du mit, okay?"
-	Timmys Opa: "Was redet ihr da über mich?!"
-	Timmys Schwester: "Nichts Timmys Opa"
-	Timmys Opa: "WAS?!"
-	Timmys Schwester: "NICHTS GP!"
-version 2:
+Timmy hat Spaß: -20 bluespunkte
+Timmys Onkel hat absolut keinen Spaß: +20 bluespunkte
+Timmys Schwester freut sich darüber, dass Timmys Onkel keinen Spaß hatte: -5 bluespunkte
 	Timmys Onkel: "Oh verdammt. Haben die hier denn wirklich jede noch so unnötige
-Attraktion?"
+		Attraktion?"
 	Timmys Schwester: "Tja, das Leben ist scheiße und deines ganz besonders."
 	Timmys Opa: "WAS IST MIT DEINER MUTTER?"
 	Timmy: "Hä? Ist was mit Mama?"
 	Timmys Onkel: "Lass es uns einfach hinter uns bringen."
 	Timmy: "Weißt du, manchmal hab ich das Gefühl, dass du nicht hier sein
-willst."
+		willst."
 	Timmys Onkel: "Ich hasse Jahrmärkte grundsätzlich. Wie kommst du darauf, dass ich
-hier sein will?"
+		hier sein will?"
 	Timmy: "Naja wir sind dabei. Reicht das nicht?"
 	Timmys Onkel: "Das macht es nicht b..."
 	Timmys Schwester: "Schnauze, alter Mann. Du wirst deinem Neffen jetzt diesen Gefallen
@@ -57,24 +37,23 @@ Risenraddo:
 	Timmys Opa: "Ich muss dringend pinkeln."
 	Optionen:
 		Pinkelpause+Riesenrad fahren
-			Timmys Ziel erreicht
-			Timmys bp auf 0
-			Timmys Schwester aus Hungergründen +5 bp
-			Timmys Onkel +10 bp für s anstehen
-			Timmys Opa +5 bp für s anstehen
+			Timmys Ziel erreicht: bp = 0
+			Timmys Schwester hat Hunger:  +5 bp
+			Timmys Onkel musste anstehen: +10 bp
+			Timmys Opa musste anstehen: +5 bp
 		Riesenrad fahren
 			Timmys Ziel erreicht
 			Timmys bp auf 0
-			Timmys Schwester aus Hungergründen +5 bp
-			Timmys Onkel +10 bp für s anstehen
-			Timmys Opa +15 bp, weil er sich in die Hose macht und anstehen muss
+			Timmys Schwester hat Hunger:  +5 bp
+			Timmys Onkel musste anstehen: +10 bp
+			Timmys Opa musste anstehen und hat sich in die Hose gemacht: +5 bp
 		Pinkelpause
-			Timmys Onkel -10 bp aus Erleichterung (macht dann zusätzliche 10bp
+			Timmys Onkel ist erleichtert nicht anstehen zu müssen: -10 bp(macht dann zusätzliche 10bp
 				wenn man später doch Riesenrad fährt)
 		keine Pinkelpause
-			Timmys Onkel -10 bp aus Erleichterung(macht dann zusätzliche 10bp
+			Timmys Onkel ist erleichtert nicht anstehen zu müssen: -10 bp(macht dann zusätzliche 10bp
 				wenn man später doch Riesenrad fährt)
-			Timmys Opa +10 bp, weil er sich in die Hose macht
+			Timmys Opa macht sich in die Hose: +10 bp
 
 Bierzelt:
 	Timmys Onkel: "Endlich was vernünftiges!"
@@ -88,6 +67,10 @@ Bierzelt:
 		Probleme vergessen.
 	Timmy: "Hä?"
 	Timmys Schwester: "Genau, Timmy. Genau das."
+	
+	Timmy ist verwirrt: +1 bp
+	Timmys Onkel betrinkt sich: -10 bp
+	Timmys Opa betrinkt sich: -10 bp
 
 Geisterbahn:
 	Timmys Schwester: "OH, können wir das bitte fahren?!
@@ -102,17 +85,16 @@ Geisterbahn:
 	Timmys Opa: "Shhh! Über was reden wir gerade?"
 	Timmy: "Nichts, Opa. Komm einfach mit."
 	Steigen ein -> Teleport zur Achterbahn.
-	Timmys Opa: "Heilige Scheiße! Wie sind wir denn hier gelandet?!"
+	Timmys Opa: "Du meine Güte! Äh, ich meinte: Heilige Scheiße! Wie sind wir denn hier gelandet?!"
 	Timmy: "Was meinst du?"
 	Timmys Onkel: "Ach, lass ihn reden. Vielleicht wird er einfach langsam senil."
 	Timmys Schwester: "Nett ist was anderes, aber da hat er wahrscheinlich recht."
 	Timmys Opa: "Was redet ihr da über mich?"
 
-	Geisterbahnziel von Timmys Schwester erfüllt
-	bp von Timmys Schwester auf null
-	-10 bp für Timmy
-	+10 bp für Onkel
-	+5 bp für Opa, weil ignoriert
+	Geisterbahnziel von Timmys Schwester erfüllt: bp = 0
+	Timmy hat Spaß: -10 bp
+	Timmys Onkel hat keinen Spaß: +10 bp
+	Timmys Opa wird ignoriert: +5 bp
 
 Achterbahn:
 	Timmys Opa: "... und da stand dann plötzlich eure Großmutter."
@@ -135,11 +117,10 @@ Achterbahn:
 	Timmys Schwester: "Immerhin muss ich mich nicht über Teenager lustig
 		machen um mich nicht erbärmlich zu fühlen."
 
-	Geisterbahnziel von Timmys Schwester erfüllt
-	bp von Timmys Schwester auf null
-	-10 bp für Timmy
-	+10 bp für Onkel
-	+5 bp für Opa, weil ignoriert
+	Geisterbahnziel von Timmys Schwester erfüllt: bp = 0
+	Timmy hat Spaß: -10 bp
+	Timmys Onkel hat keinen Spaß: +10 bp
+	Timmys Opa wird ignoriert: +5 bp
 
 Autoscooter:
 	Timmys Opa: "Endlich mal was zum Randalieren!"
@@ -158,9 +139,9 @@ Autoscooter:
 	Timmys Schwester: "Naja technisch gesehen macht er nichts Verbotenes.
 		Grade so zumindest."
 
-	Ziel von Opa erfüllt
-	Timmy +10 bp
-	Onkel -10 bp
+	Ziel von Opa erfüllt: bp = 0
+	Timmy hat Angst: +10 bp
+	Timmys Onkel muss nicht mit machen: -10 bp
 
 Wahrsager:
 	Timmy: "Hey, Onkel. Wolltest du nicht zu der Wahrsagerin?"
@@ -186,8 +167,8 @@ Wahrsager:
 	Timmys Onkel: "Das hör ich mir nicht länger an!"
 	(Wahrsagerin: "Viel Spaß noch mit ihrer Familie, Timmys Onkel!")
 
-	Onkel +20 bp
-	Schwester -10 bp (amüsiert)
+	Timmys Onkel fühlt sich verarscht: +20 bp
+	Timmys Schwester macht sich lustig: -10 bp
 
 Ponyhof:
 	Timmys Opa: "Oh schau mal Timmys Schwester! Ponys! Du liebst doch Ponys."
@@ -204,8 +185,8 @@ Ponyhof:
 		mich alleine nicht."
 	Timmys Schwester: "Hm... weißt du was? Okay."
 
-	Schwester -15 bp
-	Timmy -5 bp
+	Timmys Schwester wollte eigentlich doch reiten: -15 bp
+	Timmy hat Spat: -5 bp
 
 Bühne:
 	Barusu Feru: "Blues, blues, blues, blues, blues, blues, blues, blues, blues."
@@ -218,7 +199,7 @@ Bühne:
 	Timmys Schwester: "Es ist jetzt Jahre her. Komm damit klar."
 	Timmy: "Das Lied macht mich traurig... Ich will hier weg."
 
-	alle +10 bp
+	Alle hassen Barusu Feru: +10 bp
 
 Hammer:
 	Timmy: "Hey, da kann man schauen wie stark man ist!"
