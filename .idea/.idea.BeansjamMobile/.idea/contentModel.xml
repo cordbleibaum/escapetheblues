@@ -6,14 +6,20 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Actions" t="Include">
+            <e p="BullyAction1.cs" t="Include" />
+            <e p="BullyAction2.cs" t="Include" />
+            <e p="BullyAction3.cs" t="Include" />
+            <e p="BullyAction4.cs" t="Include" />
             <e p="FerriswheelAction1.cs" t="Include" />
             <e p="FerrisWheelAction2.cs" t="Include" />
             <e p="FerrisWheelAction3.cs" t="Include" />
             <e p="FerrisWheelAction4.cs" t="Include" />
             <e p="GhosttrainArrival.cs" t="Include" />
             <e p="GhosttrainTransition.cs" t="Include" />
+            <e p="PlayAction.cs" t="Include" />
             <e p="RollercoasterArrival.cs" t="Include" />
             <e p="RollercoasterTransition.cs" t="Include" />
+            <e p="ScooterAction.cs" t="Include" />
             <e p="SoothsayerAction.cs" t="Include" />
             <e p="TentAction.cs" t="Include" />
           </e>
@@ -24,9 +30,11 @@
           </e>
           <e p="Presentation" t="Include">
             <e p="Arrow.cs" t="Include" />
+            <e p="GhosttrainPosition.cs" t="Include" />
             <e p="HUD.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
             <e p="Meter.cs" t="Include" />
+            <e p="RollercoasterPosition.cs" t="Include" />
             <e p="Tile.cs" t="Include" />
             <e p="TileMap.cs" t="Include" />
           </e>
