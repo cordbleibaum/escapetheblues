@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Presentation;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 namespace Logic
@@ -232,8 +233,13 @@ namespace Logic
 
         public int GetSadness()
         {
-            return (CharacterGroup.instance.timmy.sadness + CharacterGroup.instance.sister.sadness +
-                CharacterGroup.instance.grandpa.sadness + CharacterGroup.instance.uncle.sadness) / 4;
+            int sadness = (CharacterGroup.instance.timmy.sadness + CharacterGroup.instance.sister.sadness +
+                           CharacterGroup.instance.grandpa.sadness + CharacterGroup.instance.uncle.sadness) / 4;
+            if (sadness >= 100)
+            {
+                SceneManager.LoadScene(2);
+            }
+            return sadness;
         }
 
         public void Teleport(int x, int y)
