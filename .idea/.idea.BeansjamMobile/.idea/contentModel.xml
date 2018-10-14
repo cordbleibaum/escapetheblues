@@ -22,6 +22,7 @@
             <e p="ScooterAction.cs" t="Include" />
             <e p="SoothsayerAction.cs" t="Include" />
             <e p="TentAction.cs" t="Include" />
+            <e p="VictoryAction.cs" t="Include" />
           </e>
           <e p="Logic" t="Include">
             <e p="Character.cs" t="Include" />

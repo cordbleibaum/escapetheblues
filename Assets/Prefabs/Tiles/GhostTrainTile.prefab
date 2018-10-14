@@ -823,7 +823,7 @@ MonoBehaviour:
     afterAction: {fileID: 0}
   - text: "Timmys Opa: \"Was redet ihr da \xFCber mich?\""
     next: 15
-    isLast: 0
+    isLast: 1
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
@@ -1167,6 +1167,7 @@ MonoBehaviour:
   SpaceX: 9.95
   SpaceY: 6.625
   actionObject: {fileID: 1693137028268256}
+  multiActionObject: {fileID: 0}
 --- !u!114 &114762919198279226
 MonoBehaviour:
   m_ObjectHideFlags: 1
