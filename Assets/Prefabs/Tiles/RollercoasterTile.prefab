@@ -11,6 +11,22 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1539259138660316}
   m_IsPrefabAsset: 1
+--- !u!1 &1076166709474858
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4506165346207812}
+  - component: {fileID: 114855290860329686}
+  m_Layer: 0
+  m_Name: Arrival
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1113886917342742
 GameObject:
   m_ObjectHideFlags: 1
@@ -125,6 +141,7 @@ GameObject:
   - component: {fileID: 4458258789712612}
   - component: {fileID: 212637516671474784}
   - component: {fileID: 114934554160867036}
+  - component: {fileID: 114194132457186014}
   m_Layer: 0
   m_Name: RollercoasterTile
   m_TagString: Untagged
@@ -132,6 +149,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1681738516852270
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4621459029270532}
+  - component: {fileID: 114759629525673844}
+  m_Layer: 0
+  m_Name: Transition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1694266756565926
 GameObject:
   m_ObjectHideFlags: 1
@@ -228,8 +261,36 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224907855166224532}
+  - {fileID: 4506165346207812}
+  - {fileID: 4621459029270532}
   m_Father: {fileID: 4458258789712612}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4506165346207812
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1076166709474858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4459348937473450}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4621459029270532
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1681738516852270}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4459348937473450}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4946471837120418
 Transform:
@@ -425,6 +486,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114194132457186014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539259138660316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db2e63b0e5e34aebadd3eeaa076d19ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114313805204771080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -678,6 +750,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114759629525673844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1681738516852270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51d907eb164b4c8eaac60fae6f1d96cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114767929293616414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -696,99 +779,117 @@ MonoBehaviour:
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Ja, ist gut, wir haben die Geschichte alleine heute'
     next: 2
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "bestimmt schon f\xFCnf mal geh\xF6rt.\""
     next: 3
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmy: "Ich will Achterbahn fahren!"'
     next: 4
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Du willst immer irgendwas."'
     next: 5
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Schwester: \"H\xF6r nicht auf den b\xF6sen Mann. Der ist nur sauer,
       weil"
     next: 6
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: er nicht zu Hause auf der Couch liegen und sich selbst bemitleiden kann."
     next: 7
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Du kleine..."'
     next: 8
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Opa: "Oh schaut mal, eine Achterbahn!"'
     next: 9
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmy: "Siehst du? Er versteht mich."'
     next: 10
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ach, verdammt."'
     next: 11
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 1681738516852270}
   - text: 'Timmys Opa: "Also bei uns war wenigstens noch alles aus Holz."'
     next: 12
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Die Geisterbahn war der Hammer, oder Timmy?"'
     next: 13
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmy: \"Ich wei\xDF nicht so recht.\""
     next: 14
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ich glaube hier hat nur eine von uns eine nahezu kindische'
     next: 15
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Freude an den Plastik-Zombies."
     next: 16
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Schwester: \"Immerhin muss ich mich nicht \xFCber Teenager lustig"
     next: 17
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "machen um mich nicht erb\xE4rmlich zu f\xFChlen.\""
     next: 17
     isLast: 1
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   optionButtons:
   - {fileID: 1537885814886564}
   - {fileID: 1113886917342742}
   - {fileID: 1863871484045876}
   - {fileID: 1957803034213992}
   text: {fileID: 114346455461110698}
-  nextAction: {fileID: 0}
+  nextAction: {fileID: 1076166709474858}
 --- !u!114 &114834730152046332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1006,6 +1107,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114855290860329686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1076166709474858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f266425cb2412fb2e69f223f200e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114916712773278582
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -14,6 +14,7 @@ namespace Presentation
             public bool isLast;
             public DialogueOption[] options;
             public GameObject nextAction;
+            public GameObject afterAction;
         }
 
         [System.Serializable]
@@ -35,6 +36,8 @@ namespace Presentation
 
         private void UpdateText()
         {
+            if (current.afterAction) current.afterAction.SetActive(true);
+            
             text.text = current.text;
             if (!current.isLast)
             {
