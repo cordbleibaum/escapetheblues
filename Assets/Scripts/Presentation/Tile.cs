@@ -29,10 +29,15 @@ namespace Presentation
             transform.Translate(new Vector2(PosX*SpaceX, PosY*SpaceY));
         }
 
+        private void OnEnable()
+        {
+            if (actionObject) actionObject.SetActive(false);
+        }
+
         public void OnGoto()
         {
             if (multiActionObject) multiActionObject.SetActive(true);
-            if (done) return;
+            if (done) {return;}
             if (once)
             {
                 done = true;

@@ -16,7 +16,9 @@
             <e p="FerrisWheelAction4.cs" t="Include" />
             <e p="GhosttrainArrival.cs" t="Include" />
             <e p="GhosttrainTransition.cs" t="Include" />
+            <e p="IntroAction.cs" t="Include" />
             <e p="PlayAction.cs" t="Include" />
+            <e p="Respawn.cs" t="Include" />
             <e p="RollercoasterArrival.cs" t="Include" />
             <e p="RollercoasterTransition.cs" t="Include" />
             <e p="ScooterAction.cs" t="Include" />
@@ -42,6 +44,7 @@
           <e p="Schiessbudi" t="Include">
             <e p="BlinkingTarget.cs" t="Include" />
             <e p="DestroyOverLifetime.cs" t="Include" />
+            <e p="ShootLoader.cs" t="Include" />
           </e>
           <e p="Tiles" t="Include">
             <e p="Dialogue.cs" t="Include" />

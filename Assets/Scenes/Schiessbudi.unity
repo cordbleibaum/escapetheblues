@@ -358,6 +358,7 @@ MonoBehaviour:
   speed: 1500
   resetTime: 1
   loseTime: 3
+  delay: 0
   up: {fileID: 1780620622}
   down: {fileID: 761312052}
   right: {fileID: 215832085}
@@ -365,6 +366,7 @@ MonoBehaviour:
   explosion: {fileID: 1734750397429158, guid: 112142a7afd724e51a3cd8ce0f6cacb2, type: 2}
   scoreText: {fileID: 2137960365}
   timeText: {fileID: 236712552}
+  cam: {fileID: 1462315450}
 --- !u!1 &287618457
 GameObject:
   m_ObjectHideFlags: 0
