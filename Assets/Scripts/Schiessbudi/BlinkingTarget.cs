@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BlinkingTarget : MonoBehaviour {
@@ -137,7 +138,8 @@ public class BlinkingTarget : MonoBehaviour {
 				}
 				Texting();
 			} else {
-				timeText.text = "Game Over";	
+				timeText.text = "Game Over";
+				SceneManager.UnloadSceneAsync(5);
 			}
 		} else {
 			timeToStart += Time.deltaTime;
