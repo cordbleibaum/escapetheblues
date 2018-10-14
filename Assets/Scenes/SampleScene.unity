@@ -1104,8 +1104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSadness: 100
-  width: 4
-  height: 4
+  width: 5
+  height: 5
   tiles:
   - {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
   - {fileID: 1539259138660316, guid: 30702b4f09ef5435ea69598d0def9ff4, type: 2}

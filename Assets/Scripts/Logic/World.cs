@@ -299,10 +299,10 @@ namespace Logic
                 currentTile = mapTiles[currentPosition.x][currentPosition.y];
                 currentTile.OnGoto();
 
-                CharacterGroup.instance.timmy.sadness += 5;
-                CharacterGroup.instance.sister.sadness += 5;
-                CharacterGroup.instance.uncle.sadness += 5;
-                CharacterGroup.instance.grandpa.sadness += 5;
+                CharacterGroup.instance.timmy.sadness += 2;
+                CharacterGroup.instance.sister.sadness += 2;
+                CharacterGroup.instance.uncle.sadness += 2;
+                CharacterGroup.instance.grandpa.sadness += 2;
             }
 
             hasTeleported = false;
