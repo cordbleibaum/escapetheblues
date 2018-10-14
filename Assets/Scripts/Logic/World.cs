@@ -9,7 +9,6 @@ namespace Logic
     {
         public static World instance;
         
-        public int startSadness;
         public int maxSadness = 100;
     
         public int width = 4;
@@ -18,18 +17,22 @@ namespace Logic
         public GameObject[] tiles;
         public GameObject startTile;
         public GameObject goalTile;
+        public GameObject grassTile;
 
         public TileMap map;
 
         public GameObject arrows;
+
+        public Sprite left, right, top, bottom, bottomLeft, topLeft, topRight, bottomRight;
         
-        private int sadness;
         private Vector2Int currentPosition;
         private Vector2Int goalPosition;
 
         private Tile[][] mapTiles;
 
         private Tile currentTile;
+
+        private bool hasTeleported;
 
         private bool canSlideValue;
         public bool canSlide
@@ -53,9 +56,7 @@ namespace Logic
         {
             instance = this;
             
-            Random.InitState(Time.renderedFrameCount);
-            
-            sadness = startSadness;
+            Random.InitState((int)System.DateTime.Now.Ticks);
             
             currentPosition = new Vector2Int(0, 0);
             
@@ -73,6 +74,60 @@ namespace Logic
             goalPosition = new Vector2Int(goalX, goalY);
         }
 
+        private void CheckBorder(int x, int y, GameObject tile)
+        {
+            var sprite = tile.GetComponent<SpriteRenderer>();
+            if (x == 0)
+            {
+                if (y == 0)
+                {
+                    sprite.sprite = bottomLeft;
+                }
+                else
+                {
+                    if (y != height - 1)
+                    {
+                        sprite.sprite = left;
+                    }
+                    else
+                    {
+                        sprite.sprite = topLeft;
+                    }
+                }
+            }
+            else
+            {
+                if (y == 0)
+                {
+                    if (x == width - 1)
+                    {
+                        sprite.sprite = bottomRight;
+                    }
+                    else
+                    {
+                        sprite.sprite = bottom;
+                    }
+                }
+                else
+                {
+                    if (x == width - 1)
+                    {
+                        if (y == height - 1)
+                        {
+                            sprite.sprite = topRight;
+                        }
+                        else
+                        {
+                            sprite.sprite = right;
+                        }
+                    } else if (y == height - 1)
+                    {
+                        sprite.sprite = top;
+                    }
+                }
+            }
+        } 
+        
         private void BuildMap()
         {
             mapTiles = new Tile[width][];
@@ -103,6 +158,7 @@ namespace Logic
                 tileComponent.PosX = x;
                 tileComponent.PosY = y;
                 tileObject.transform.parent = map.gameObject.transform;
+                CheckBorder(x, y, tileObject);
             }
             for (var x = 0; x < width; x++)
             {
@@ -132,22 +188,60 @@ namespace Logic
                     tileComponent.PosX = x;
                     tileComponent.PosY = y;
                     tileObject.transform.parent = map.gameObject.transform;
+                    CheckBorder(x, y, tileObject);
                 }
+            }
+
+            for (var x = -1; x <= width; x++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = x;
+                tileComponent.PosY = -1;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            
+            for (var x = -1; x <= width; x++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = x;
+                tileComponent.PosY = height;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            
+            for (var y = 0; y <= height; y++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = -1;
+                tileComponent.PosY = y;
+                tileObject.transform.parent = map.gameObject.transform;
+            }
+            
+                        
+            for (var y = 0; y <= height; y++)
+            {
+                GameObject tileObject = Instantiate(grassTile);
+                var tileComponent = tileObject.GetComponent<Tile>();
+                tileComponent.PosX = width;
+                tileComponent.PosY = y;
+                tileObject.transform.parent = map.gameObject.transform;
             }
         }
 
         public int GetSadness()
         {
-            return sadness;
+            return (CharacterGroup.instance.timmy.sadness + CharacterGroup.instance.sister.sadness +
+                CharacterGroup.instance.grandpa.sadness + CharacterGroup.instance.uncle.sadness) / 4;
         }
 
-        public void GainSadness(int amount)
+        public void Teleport(int x, int y)
         {
-            sadness += amount;
-            if (sadness > maxSadness)
-            {
-                // GameOver
-            }
+            hasTeleported = true;
+            
+            map.Teleport(currentPosition.x - x, currentPosition.y - y);
+            currentPosition = new Vector2Int(x, y);
         }
 
         public void Move(Direction direction)
@@ -198,7 +292,14 @@ namespace Logic
                 currentTile.OnLeave();
                 currentTile = mapTiles[currentPosition.x][currentPosition.y];
                 currentTile.OnGoto();
+
+                CharacterGroup.instance.timmy.sadness += 5;
+                CharacterGroup.instance.sister.sadness += 5;
+                CharacterGroup.instance.uncle.sadness += 5;
+                CharacterGroup.instance.grandpa.sadness += 5;
             }
+
+            hasTeleported = false;
         }
     }
 }

@@ -129,6 +129,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1823315750302924
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4337838960112270}
+  - component: {fileID: 114535555460899566}
+  m_Layer: 0
+  m_Name: NextAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1912757695472598
 GameObject:
   m_ObjectHideFlags: 1
@@ -164,6 +180,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4337838960112270
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823315750302924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4932915232003822}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4556192122916898
 Transform:
   m_ObjectHideFlags: 1
@@ -231,6 +260,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224338419037595908}
+  - {fileID: 4337838960112270}
   m_Father: {fileID: 4556192122916898}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -308,94 +338,139 @@ MonoBehaviour:
     next: 1
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Bitte was?! Ich lach mich kaputt."'
     next: 2
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Timmy, was zur H\xF6lle? Ich hab' dir gesagt, dass das
       unter"
     next: 3
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "uns bleiben muss! Mach dich nur \xFCber mich lustig. Zu deiner"
     next: 4
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Information: diese Wahrsagerin hat Psychologie studiert."'
     next: 5
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Schwester: \"Und statt eine seri\xF6se Therapeutin zu werden, wurde
       sie"
     next: 6
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Wahrsagerin auf einem Jahrmarkt? Inwiefern macht das irgendwas besser?"
     next: 7
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ach halt doch die Klappe."'
     next: 8
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Timmys Onkel verschwindet im Zelt
     next: 9
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Wahrsagerin: \"Also, erz\xE4hlen Sie mir doch erst einmal von ihren Onkel-Events.\""
     next: 10
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Von meinen WAS?"'
     next: 11
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Wahrsagerin: "Sie wissen genau was ich meine. Zeigen sie mir doch an'
     next: 12
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "dieser Puppe, wo sie ber\xFChrt worden sind.\""
     next: 13
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Ich bin nie ber\xFChrt worden. Wovon reden Sie? Verwechseln"
     next: 14
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Sie mich mit irgendjemandem?"
     next: 15
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Wahrsagerin: "Oh... Meine Kugel sagt mir einfach, dass Ihr Charakter stark'
     next: 16
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "beeintr\xE4chtigt ist auf eine Weise, die entweder durch ein Kindheitstrauma"
     next: 17
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "ausgel\xF6st worden ist oder...\""
     next: 18
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ja, oder...?"'
     next: 19
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Wahrsagerin: "Naja, oder Sie sind einfach ein Arsch."'
     next: 20
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "(Wahrsagerin: \"Viel Spa\xDF noch mit ihrer Familie, Timmys Onkel!\")"
     next: 21
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Das h\xF6r ich mir nicht l\xE4nger an!\""
     next: 21
     isLast: 1
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   optionButtons: []
   text: {fileID: 114657745767437808}
+  nextAction: {fileID: 1823315750302924}
 --- !u!114 &114471655329572278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -412,6 +487,17 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114535555460899566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823315750302924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1aa24f90e2fa4efa82eb5287e00cf6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114650773810902358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,7 +571,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1adf07fd3f15041dc9d8dbb84a4b1e00, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -493,7 +579,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -559,13 +645,13 @@ MonoBehaviour:
     lineCount: 0
     pageCount: 0
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
   m_inputSource: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -590,6 +676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLimited: 1
   id: 3
+  once: 1
   PosX: 0
   PosY: 0
   SpaceX: 9.95

@@ -15,6 +15,11 @@ namespace Presentation
         {
             return !(currentSlide > 0.0001f);
         }
+
+        public void Teleport(int x, int y)
+        {
+            gameObject.transform.Translate(new Vector2(x*slideX, y*slideY));
+        }
         
         public void Slide(Direction direction)
         {
