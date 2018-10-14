@@ -1873,6 +1873,7 @@ MonoBehaviour:
   slideX: 9.95
   slideY: 6.625
   slideSpeed: 10
+  swipe: {fileID: 1230862132370632, guid: 439e4d6e6c3b54563a098f9e664e63b1, type: 2}
 --- !u!4 &1874007893
 Transform:
   m_ObjectHideFlags: 0

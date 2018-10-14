@@ -7,6 +7,8 @@ namespace Presentation
         public float slideX;
         public float slideY;
         public float slideSpeed;
+
+        public GameObject swipe;
         
         private float currentSlide;
         private Vector2 slideDirection;
@@ -23,6 +25,8 @@ namespace Presentation
         
         public void Slide(Direction direction)
         {
+            Instantiate(swipe);
+            
             switch (direction)
             {
                 case Direction.Left:
