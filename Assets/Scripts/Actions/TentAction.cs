@@ -7,5 +7,6 @@ public class TentAction : MonoBehaviour {
         CharacterGroup.instance.timmy.sadness += 1;
         CharacterGroup.instance.uncle.sadness -= 10;
         CharacterGroup.instance.grandpa.sadness -= 10;
+        CharacterGroup.instance.uncle.goalFulfilled = true;
     }
 }
