@@ -338,92 +338,136 @@ MonoBehaviour:
     next: 1
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Bitte was?! Ich lach mich kaputt."'
     next: 2
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Timmy, was zur H\xF6lle? Ich hab' dir gesagt, dass das
       unter"
     next: 3
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "uns bleiben muss! Mach dich nur \xFCber mich lustig. Zu deiner"
     next: 4
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Information: diese Wahrsagerin hat Psychologie studiert."'
     next: 5
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Schwester: \"Und statt eine seri\xF6se Therapeutin zu werden, wurde
       sie"
     next: 6
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Wahrsagerin auf einem Jahrmarkt? Inwiefern macht das irgendwas besser?"
     next: 7
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ach halt doch die Klappe."'
     next: 8
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Timmys Onkel verschwindet im Zelt
     next: 9
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Wahrsagerin: \"Also, erz\xE4hlen Sie mir doch erst einmal von ihren Onkel-Events.\""
     next: 10
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Von meinen WAS?"'
     next: 11
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Wahrsagerin: "Sie wissen genau was ich meine. Zeigen sie mir doch an'
     next: 12
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "dieser Puppe, wo sie ber\xFChrt worden sind.\""
     next: 13
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Ich bin nie ber\xFChrt worden. Wovon reden Sie? Verwechseln"
     next: 14
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Sie mich mit irgendjemandem?"
     next: 15
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Wahrsagerin: "Oh... Meine Kugel sagt mir einfach, dass Ihr Charakter stark'
     next: 16
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "beeintr\xE4chtigt ist auf eine Weise, die entweder durch ein Kindheitstrauma"
     next: 17
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "ausgel\xF6st worden ist oder...\""
     next: 18
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ja, oder...?"'
     next: 19
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Wahrsagerin: "Naja, oder Sie sind einfach ein Arsch."'
     next: 20
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "(Wahrsagerin: \"Viel Spa\xDF noch mit ihrer Familie, Timmys Onkel!\")"
     next: 21
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Das h\xF6r ich mir nicht l\xE4nger an!\""
     next: 21
     isLast: 1
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   optionButtons: []
   text: {fileID: 114657745767437808}
   nextAction: {fileID: 1823315750302924}
@@ -632,6 +676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLimited: 1
   id: 3
+  once: 1
   PosX: 0
   PosY: 0
   SpaceX: 9.95

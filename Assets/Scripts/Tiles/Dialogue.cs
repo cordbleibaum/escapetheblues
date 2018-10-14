@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Presentation
 {
     public class Dialogue: MonoBehaviour
-    {
+    {   
         [System.Serializable]
         public struct DialogueLine
         {

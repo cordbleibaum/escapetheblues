@@ -302,6 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLimited: 1
   id: 4
+  once: 1
   PosX: 0
   PosY: 0
   SpaceX: 9.95
@@ -475,48 +476,70 @@ MonoBehaviour:
     next: 1
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Opa: \"Auf in den Kampf! F\xFCr den Alkohol!\""
     next: 2
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Opa bitte. Du warst nicht mal in einem Krieg." '
     next: 3
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Timmys Onkel und Opa verschwinden im Bierzelt
     next: 4
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmy: "Was ist an Alkohol so toll?"'
     next: 5
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Schwester: \"Nichts. Die beiden denken nur sie k\xF6nnten damit
       ihrer..."
     next: 6
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "j\xE4mmerlichen Existenz f\xFCr einen fl\xFCchtigen Moment entkommen, indem
       sie ihre..."
     next: 7
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Seele und ihren K\xF6rper mit Nervengift f\xFCllen, bis sie ihre irdischen"
     next: 8
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Probleme vergessen.
     next: 9
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmy: \"H\xE4?\""
     next: 10
     isLast: 0
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Genau, Timmy. Genau das."'
     next: 10
     isLast: 1
     options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   optionButtons: []
   text: {fileID: 114319214678673106}
   nextAction: {fileID: 1693041006929458}

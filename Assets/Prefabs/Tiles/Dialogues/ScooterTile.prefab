@@ -577,6 +577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLimited: 1
   id: 99
+  once: 1
   PosX: 0
   PosY: 0
   SpaceX: 9.95
