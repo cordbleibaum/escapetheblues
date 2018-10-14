@@ -192,6 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4946471837120418}
   - component: {fileID: 212315019378017480}
+  - component: {fileID: 95522826944993886}
   m_Layer: 0
   m_Name: FullRollerCoaster
   m_TagString: Untagged
@@ -305,6 +306,24 @@ Transform:
   m_Father: {fileID: 4458258789712612}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95522826944993886
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764186205427964}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 627cc65a9a7c54381a33bfe30dc8fd66, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114040377975156064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1426,7 +1445,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f7c188731892e44e4a0beee3b96462e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81cab7ed08a7a4331b19958b88f89e50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
