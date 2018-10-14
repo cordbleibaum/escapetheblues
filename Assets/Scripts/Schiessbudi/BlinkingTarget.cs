@@ -7,6 +7,8 @@ public class BlinkingTarget : MonoBehaviour {
 	public float resetTime;
 	public float loseTime;
 
+	public float delay;
+
 	public Transform up;
 	public Transform down;
 	public Transform right;
@@ -16,15 +18,19 @@ public class BlinkingTarget : MonoBehaviour {
 	public Text scoreText;
 	public Text timeText;
 
+	public Camera cam;
+
 	private float timer;
 	private float resetTimer;
 	private bool move;
 	private bool ready;
 	private Vector3 movement;
-	private int score;
+	public static int score;
 	private float loseTimer;
 	private bool hit;
-	private bool gameOver;
+	public static bool gameOver;
+	private float timeToStart;
+	private bool waiting;
 
 	void Texting() {
 		if(hit) {
@@ -53,6 +59,8 @@ public class BlinkingTarget : MonoBehaviour {
 		hit = true;
 		loseTimer = loseTime;
 		Texting();
+		timeToStart = 0;
+		waiting = true;
 	}
 	
 	void Reset() {
@@ -66,69 +74,75 @@ public class BlinkingTarget : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(!gameOver) {
-			if(ready) {
-				loseTimer -= Time.deltaTime;
-				if(loseTimer <= 0) {
-					gameOver = true;
-				}
-				foreach(Touch touch in Input.touches) {
-					if(touch.phase == TouchPhase.Began) {
+		if(!waiting) {
+			if(!gameOver) {
+				if(ready) {
+					loseTimer -= Time.deltaTime;
+					if(loseTimer <= 0) {
+						gameOver = true;
+					}
+					foreach(Touch touch in Input.touches) {
+						if(touch.phase == TouchPhase.Began) {
+							RaycastHit hit;
+							Ray ray = cam.ScreenPointToRay(touch.position);
+							if(Physics.Raycast(ray, out hit, 100.0f)) {
+								if(hit.transform.gameObject.CompareTag("Target"))
+									Reset();
+							}
+						}
+					}
+
+					if(Input.GetMouseButtonDown(0)) {
 						RaycastHit hit;
-						Ray ray = Camera.main.ScreenPointToRay(touch.position);
+						Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 						if(Physics.Raycast(ray, out hit, 100.0f)) {
 							if(hit.transform.gameObject.CompareTag("Target"))
 								Reset();
 						}
 					}
-				}
 
-				if(Input.GetMouseButtonDown(0)) {
-					RaycastHit hit;
-					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-					if(Physics.Raycast(ray, out hit, 100.0f)) {
-						if(hit.transform.gameObject.CompareTag("Target"))
-							Reset();
-					}
-				}
-
-				if(!move) {
-					timer += Time.deltaTime;
-					if(timer >= waitTime) {
-						move = true;
-						timer = 0;
+					if(!move) {
+						timer += Time.deltaTime;
+						if(timer >= waitTime) {
+							move = true;
+							timer = 0;
+						}
+					} else {
+						Vector2 direction = Random.insideUnitCircle;
+						movement = new Vector3(0, speed*direction.x, speed*direction.y);
+						transform.position = transform.position + movement*Time.deltaTime;
+						if(transform.position.y > up.position.y)
+							transform.position = new Vector3(transform.position.x, up.position.y, transform.position.z);
+						if(transform.position.y < down.position.y)
+							transform.position = new Vector3(transform.position.x, up.position.y, transform.position.z);
+						if(transform.position.z > right.position.z)
+							transform.position = new Vector3(transform.position.x, transform.position.y, right.position.z);
+						if(transform.position.z < left.position.z)
+							transform.position = new Vector3(transform.position.x, transform.position.y, left.position.z);
+						move = false;
 					}
 				} else {
-					Vector2 direction = Random.insideUnitCircle;
-					movement = new Vector3(0, speed*direction.x, speed*direction.y);
-					transform.position = transform.position + movement*Time.deltaTime;
-					if(transform.position.y > up.position.y)
-						transform.position = new Vector3(transform.position.x, up.position.y, transform.position.z);
-					if(transform.position.y < down.position.y)
-						transform.position = new Vector3(transform.position.x, up.position.y, transform.position.z);
-					if(transform.position.z > right.position.z)
-						transform.position = new Vector3(transform.position.x, transform.position.y, right.position.z);
-					if(transform.position.z < left.position.z)
-						transform.position = new Vector3(transform.position.x, transform.position.y, left.position.z);
-					move = false;
+					resetTimer += Time.deltaTime;
+					if(resetTimer >= resetTime) {
+						//restart
+						transform.GetChild(0).gameObject.SetActive(true);
+						GetComponent<Collider>().enabled = true;
+						resetTimer = 0;
+						timer = 0;
+						ready = true;
+						float y = Random.Range(down.position.y, up.position.y);
+						float z = Random.Range(left.position.z, right.position.z);
+						transform.position = new Vector3(transform.position.x, y, z);
+					}
 				}
+				Texting();
 			} else {
-				resetTimer += Time.deltaTime;
-				if(resetTimer >= resetTime) {
-					//restart
-					transform.GetChild(0).gameObject.SetActive(true);
-					GetComponent<Collider>().enabled = true;
-					resetTimer = 0;
-					timer = 0;
-					ready = true;
-					float y = Random.Range(down.position.y, up.position.y);
-					float z = Random.Range(left.position.z, right.position.z);
-					transform.position = new Vector3(transform.position.x, y, z);
-				}
+				timeText.text = "Game Over";	
 			}
-			Texting();
 		} else {
-			timeText.text = "Game Over";	
+			timeToStart += Time.deltaTime;
+			if(timeToStart >= delay)
+				waiting = false;
 		}
 	}
 }
