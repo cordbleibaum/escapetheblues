@@ -6,6 +6,7 @@ public class SoothsayerAction : MonoBehaviour {
     {
         CharacterGroup.instance.uncle.sadness += 20;
         CharacterGroup.instance.uncle.goalFulfilled = true;
+        CharacterGroup.instance.uncle.goalCheck.SetActive(true);
         CharacterGroup.instance.sister.sadness -= 10;
     }
 }
