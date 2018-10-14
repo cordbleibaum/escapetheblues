@@ -94,33 +94,12 @@ Christian the christian guy vs Schwester:
 			Timmys Schwester ist genervt, aber freut sich, dass Timmy ihr helfen wollte: +10 bp
 
 
-Ex-Freundin vs Onkel:
-	Timmys Onkel: "Was suchen die denn hier?!"
-	Ex: "Oh hi, Timmys Onkel. Was suchst du denn hier?"
-	Timmys Onkel: "Ach hallo, schön dich zu sehen! Ich verbringe einfach einen
-		Tag mit der Familie."
-	Ex: "Das ist übrigens Alfredo. Wie ist es dir denn gegangen?"
-	optionen:
-		a) übertreiben
-			Timmys Onkel: "Die letzten Monate liefen bei mir einfach
-				wundervoll. Ich habe mein Leben gerade so richtig im Griff."
-			Ex: "Das freut mich für dich. Wirklich."
-			Timmys Onkel fühlt sich schäbig: +10 bp
-		b) ablocken
-			Timmys Onkel: "Ganz okay, aber viel wichtiger: Wie geht es denn
-				dir?"
-			Ex: "Wundervoll. Du, es war schön dich mal wieder zu treffen, aber
-				wir müssen weiter."
-			Timmys Onkel sieht ihren mitleidigen Blick: +20 bp
-
-
 Schießbudenangestellter Steve vs Onkel:
 	Steve: "Herzlich Willkommen, bei meinem bescheidenen Schießstand. Wer von euch
 		möchte denn spielen? Wie wäre es denn mit Ihnen? Als starker
 		gutaussehender Mann sollte das doch kein Problem sein."
 	Timmys Onkel: "Ich?!"
 	Timmys Schwester: "Er?!"
-	Steve: "Wer denn sonst? Und warum so überrascht?"
 	optionen:
 		a) interessiert
 			Timmys Onkel: "Ich... ähm... also, danke... ähm... ja, wenn Sie das sagen
@@ -128,8 +107,7 @@ Schießbudenangestellter Steve vs Onkel:
 			Steve: "Ach, Sie dürfen hier kostenlos spielen und nennen Sie mich doch
 				Steve."
 			Timmys Onkel: "Oh, gerne, Steve. Ich bin Tommys Onkel."
-			Timmy: "Ich heiße Timmy!"
-			Timmys Schwester: "Du dumme Sau!"
+			Timmys Schwester: "Timmy, du dumme Sau!"
 			Timmys Onkel freut sich: -25 bp
 		b) desinteressiert aber geschmeichelt
 			Timmys Onkel: "Ich... ähm... also, danke... ähm... ja, wenn Sie das sagen

@@ -146,29 +146,34 @@ Autoscooter:
 Wahrsager:
 	Timmy: "Hey, Onkel. Wolltest du nicht zu der Wahrsagerin?"
 	Timmys Schwester: "Bitte was?! Ich lach mich kaputt."
-	Timmys Onkel: "Timmy, was zur Hölle? Ich hab' dir gesagt, dass das unter
-		uns bleiben muss! Mach dich nur über mich lustig. Zu deiner
-		Information: diese Wahrsagerin hat Psychologie studiert."
-	Timmys Schwester: "Und statt eine seriöse Therapeutin zu werden, wurde sie
-		Wahrsagerin auf einem Jahrmarkt? Inwiefern macht das irgendwas besser?"
-	Timmys Onkel: "Ach halt doch die Klappe."
-	Timmys Onkel verschwindet im Zelt
-	Wahrsagerin: "Also, erzählen Sie mir doch erst einmal von ihren Onkel-Events."
-	Timmys Onkel: "Von meinen WAS?"
-	Wahrsagerin: "Sie wissen genau was ich meine. Zeigen sie mir doch an
-		dieser Puppe, wo sie berührt worden sind."
-	Timmys Onkel: "Ich bin nie berührt worden. Wovon reden Sie? Verwechseln
-		Sie mich mit irgendjemandem?"
-	Wahrsagerin: "Oh... Meine Kugel sagt mir einfach, dass Ihr Charakter stark
-		beeinträchtigt ist auf eine Weise, die entweder durch ein Kindheitstrauma
-		ausgelöst worden ist oder..."
-	Timmys Onkel: "Ja, oder...?"
-	Wahrsagerin: "Naja, oder Sie sind einfach ein Arsch."
-	Timmys Onkel: "Das hör ich mir nicht länger an!"
-	(Wahrsagerin: "Viel Spaß noch mit ihrer Familie, Timmys Onkel!")
-
-	Timmys Onkel hat sein Ziel erreicht, aber fühlt sich verarscht: +20 bp
-	Timmys Schwester macht sich lustig: -10 bp
+	Timmys Onkel: "Timmy, was zur Hölle? Egal, ich muss das jetzt tun."
+	-> Kampf mit Timmys Onkels Ex
+	Timmys Onkel: "So sehen wir uns wieder!"
+	Ex: "Ich habe dich erwartet!"
+	optionen:
+		a) so tief gesunken
+			Timmys Onkel: "Wie konntest du nur so tief sinken? Hast du dich
+				nicht immer damit gebrüstet intelligenter zu sein als ich?"
+			Ex: "Du sprichst von tief sinken? Warum bist du denn hier?"
+			a.1 will dich zurück
+				Ex: "Ohhh. Hm... Warte kurz."
+				Timmys Onkel: "Was machst du mit der Kugel?"
+				Ex: "Tut mir leid die Kugel sagt nein."
+				Timmys Onkel: "Aber..."
+				Ex: "Die Kugel sagt nein!"
+			a.2 HAHA
+				Timmys Onkel: "HAHA!"
+				Ex: "Siehst du und deswegen stirbst du alleine."
+		b) will dich zurück
+			Timmys Onkel: "Ich will dich zurück!"
+			Ex: "Ohhh. Hm... Warte kurz."
+			Timmys Onkel: "Was machst du mit der Kugel?"
+			Ex: "Tut mir leid die Kugel sagt nein."
+			Timmys Onkel: "Aber..."
+			Ex: "Die Kugel sagt nein!"
+		c) HAHA
+			Timmys Onkel: "HAHA!"
+			Ex: "Siehst du und deswegen stirbst du alleine."
 
 Ponyhof:
 	Timmys Opa: "Oh schau mal Timmys Schwester! Ponys! Du liebst doch Ponys."
