@@ -23,18 +23,19 @@ Timmys Schwester freut sich darüber, dass Timmys Onkel keinen Spaß hatte: -5 b
 		Leben."
 	Timmy: "Opfer sagt man nicht, sagt meine Lehrerin immer."
 
+
 Risenraddo:
-	Timmy: "Ohhh, kore wa Risenraddo?"
+	Timmy: "Ohhh, kore wa Risenraddo."
 	Timmys Grandpa: "Hai, Risenraddo, desu."
 	Timmys Onkel: "Da ist sie ja. Die Mutter der Langeweile. Zerstörer meiner
-		Wünsche hier frühzeitig wieder zu verschwinden. Knechter der
-		Warteschlangen."
+		Hoffnungen hier frühzeitig wieder zu verschwinden. Knechter der
+		Kniescheiben."
 	Timmy Schwester: "Sakura dewa arimasen."
 	Timmys Onkel: "Die Warteschlange sieht aber wirklich lang aus. Müssen wir
 		das wirklich machen?"
 	Timmy: "Aber ich will doch unbedingt..."
-	Timmys Schwester: "Bin ich die einzige, die bei dem Anblick hungrig wird?"
-	Timmys Opa: "Ich muss dringend pinkeln."
+	Timmys Schwester: "Bin ich die Einzige, die bei dem Anblick hungrig wird?"
+	Timmys Opa: "Ich muss mal."
 	Optionen:
 		Pinkelpause+Riesenrad fahren
 			Timmys Ziel erreicht: bp = 0
@@ -56,15 +57,13 @@ Risenraddo:
 			Timmys Opa macht sich in die Hose: +10 bp
 
 Bierzelt:
-	Timmys Onkel: "Endlich was vernünftiges!"
-	Timmys Opa: "Auf in den Kampf! Für den Alkohol!"
-	Timmys Schwester: "Opa bitte. Du warst nicht mal in einem Krieg."
+	Timmys Onkel: "Endlich mal was Vernünftiges!"
+	Timmys Opa: "Auf in den Kampf! Der Feind heißt Bier!"
+	Timmys Schwester: "Opa bitte. Du warst nicht mal im Krieg."
 	Timmys Onkel und Opa verschwinden im Bierzelt
-	Timmy: "Was ist an Alkohol so toll?"
+	Timmy: "Was ist an Bier so toll?"
 	Timmys Schwester: "Nichts. Die beiden denken nur sie könnten damit ihrer
-		jämmerlichen Existenz für einen flüchtigen Moment entkommen, indem sie ihre
-		Seele und ihren Körper mit Nervengift füllen, bis sie ihre irdischen
-		Probleme vergessen.
+		jämmerlichen Existenz für einen flüchtigen Moment entkommen."
 	Timmy: "Hä?"
 	Timmys Schwester: "Genau, Timmy. Genau das."
 	
@@ -72,24 +71,21 @@ Bierzelt:
 	Timmys Onkel betrinkt sich: -10 bp
 	Timmys Opa betrinkt sich: -10 bp
 
+
 Geisterbahn:
 	Timmys Schwester: "OH, können wir das bitte fahren?!
 		Äh, ich meine Timmy könnte das gefallen."
-	Timmys Onkel: "Klar. Wenn du willst können wir auch schauen ob sie dort
-		Kinderkostüme für kleine Hexen haben, aber ich weiß nicht, ob sie
-		welche in deiner Größe haben."
-	Timmys Schwester: "Hey, ich hab nur gehört, dass die gut sein soll und
-		Timmy mag doch Geisterbahnen so gerne."
+	Timmys Onkel: "Awww, Miss Erwachsen will Geisterbahn fahren."
+	Timmys Schwester: "Wenigstens verlass ich nicht zum ersten Mal seit Wochen
+		die Wohnung. Außerdem mag Timmy einfach Geisterbahnen."
 	Timmy: "Mag ich gar ni..."
 	Timmys Schwester: "Shhh!"
-	Timmys Opa: "Shhh! Über was reden wir gerade?"
-	Timmy: "Nichts, Opa. Komm einfach mit."
 	Steigen ein -> Teleport zur Achterbahn.
-	Timmys Opa: "Du meine Güte! Äh, ich meinte: Heilige Scheiße! Wie sind wir denn hier gelandet?!"
+	Timmys Opa: "HEILIGE SCHEISSE! Wie sind wir denn hier gelandet?!"
 	Timmy: "Was meinst du?"
 	Timmys Onkel: "Ach, lass ihn reden. Vielleicht wird er einfach langsam senil."
 	Timmys Schwester: "Nett ist was anderes, aber da hat er wahrscheinlich recht."
-	Timmys Opa: "Was redet ihr da über mich?"
+	Timmys Opa: "Redet ihr etwa über mich!?"
 
 	Geisterbahnziel von Timmys Schwester erfüllt: bp = 0
 	Timmy hat Spaß: -10 bp
@@ -98,8 +94,7 @@ Geisterbahn:
 
 Achterbahn:
 	Timmys Opa: "... und da stand dann plötzlich eure Großmutter."
-	Timmys Schwester: "Ja, ist gut, wir haben die Geschichte alleine heute
-		bestimmt schon fünf mal gehört."
+	Timmys Schwester: "Wir haben die Geschichte schon oft genug gehört."
 	Timmy: "Ich will Achterbahn fahren!"
 	Timmys Onkel: "Du willst immer irgendwas."
 	Timmys Schwester: "Hör nicht auf den bösen Mann. Der ist nur sauer, weil
@@ -109,7 +104,7 @@ Achterbahn:
 	Timmy: "Siehst du? Er versteht mich."
 	Timmys Onkel: "Ach, verdammt."
 	Steigen ein -> Teleportation zur Geisterbahn
-	Timmys Opa: "Also bei uns war wenigstens noch alles aus Holz."
+	Timmys Opa: "Damals war bei uns wenigstens alles aus Holz."
 	Timmys Schwester: "Die Geisterbahn war der Hammer, oder Timmy?"
 	Timmy: "Ich weiß nicht so recht."
 	Timmys Onkel: "Ich glaube hier hat nur eine von uns eine nahezu kindische
@@ -125,19 +120,12 @@ Achterbahn:
 Autoscooter:
 	Timmys Opa: "Endlich mal was zum Randalieren!"
 	Timmy: "Ähm, Opa? Geht's dir noch gut?"
-	Timmys Opa: "Hier gibt es eine Gelegenheit fremde Menschen zu rammen und
-		du fragst ob es mir gut geht? Mir ging es nie besser! Komm mit, lass
-		uns ein paar Kinder drangsalieren!"
+	Timmys Opa: "Mir ging es nie besser! Komm mit, lass uns ein paar Kinder drangsalieren!"
 	Timmy: "Helft mir!"
 	Timmys Schwester: "Sorry, da musst du jetzt durch. Ich werde dich nie
 		vergessen!"
-	Timmys Opa und Timmy verschwinden im Autoscooter
-	Timmys Onkel: "Wenigstens werde ich mal aus der Sache raus gelassen."
 	Fremde Stimme 1: "AHHHHHHH EIN WAHNSINNIGER!!1!!elf!"
-	Fremde Stimme 2: "Verdammt, er hat ein Kind als Geisel! Sollen wir die
-		Polizei rufen?"
-	Timmys Schwester: "Naja technisch gesehen macht er nichts Verbotenes.
-		Grade so zumindest."
+	Fremde Stimme 2: "Verdammt, er hat ein Kind als Geisel!"
 
 	Ziel von Opa erfüllt: bp = 0
 	Timmy hat Angst: +10 bp
@@ -158,8 +146,8 @@ Wahrsager:
 			a.1 will dich zurück
 				Ex: "Ohhh. Hm... Warte kurz."
 				Timmys Onkel: "Was machst du mit der Kugel?"
-				Ex: "Tut mir leid die Kugel sagt nein."
-				Timmys Onkel: "Aber..."
+				Ex: "Die Kugel sagt nein."
+				Timmys Onkel: "Was meinst du?"
 				Ex: "Die Kugel sagt nein!"
 			a.2 HAHA
 				Timmys Onkel: "HAHA!"
@@ -168,8 +156,8 @@ Wahrsager:
 			Timmys Onkel: "Ich will dich zurück!"
 			Ex: "Ohhh. Hm... Warte kurz."
 			Timmys Onkel: "Was machst du mit der Kugel?"
-			Ex: "Tut mir leid die Kugel sagt nein."
-			Timmys Onkel: "Aber..."
+			Ex: "Die Kugel sagt nein."
+			Timmys Onkel: "Was meinst du?"
 			Ex: "Die Kugel sagt nein!"
 		c) HAHA
 			Timmys Onkel: "HAHA!"
