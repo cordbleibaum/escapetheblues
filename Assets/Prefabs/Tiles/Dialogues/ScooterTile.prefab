@@ -227,84 +227,48 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Opa: "Hier gibt es eine Gelegenheit fremde Menschen zu rammen und'
+  - text: 'Timmys Opa: "Mir ging''s nie besser!'
     next: 3
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: du fragst ob es mir gut geht? Mir ging es nie besser! Komm mit, lass
+  - text: Komm mit, lass uns ein paar Kinder drangsalieren!"
     next: 4
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: uns ein paar Kinder drangsalieren!"
+  - text: 'Timmy: "Helft mir!"'
     next: 5
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmy: "Helft mir!"'
+  - text: 'Timmys Schwester: "Sorry, da musst du jetzt durch. Ich werde dich nie'
     next: 6
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Schwester: "Sorry, da musst du jetzt durch. Ich werde dich nie'
+  - text: vergessen!"
     next: 7
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: vergessen!"
+  - text: 'Fremde Stimme 1: "AHHHHHHH EIN WAHNSINNIGER!!1!!elf!"'
     next: 8
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: Timmys Opa und Timmy verschwinden im Autoscooter
+  - text: 'Fremde Stimme 2: "Verdammt, er hat ein Kind als Geisel!"'
     next: 9
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: 'Timmys Onkel: "Wenigstens werde ich mal aus der Sache raus gelassen."'
-    next: 10
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: 'Fremde Stimme 1: "AHHHHHHH EIN WAHNSINNIGER!!1!!elf!"'
-    next: 11
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: 'Fremde Stimme 2: "Verdammt, er hat ein Kind als Geisel! Sollen wir die'
-    next: 12
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: Polizei rufen?"
-    next: 13
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: 'Timmys Schwester: "Naja technisch gesehen macht er nichts Verbotenes.'
-    next: 14
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: Grade so zumindest."
-    next: 14
     isLast: 1
     options: []
     nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
+    afterAction: {fileID: 1693555246129308}
   optionButtons: []
   text: {fileID: 114515680641791858}
   nextAction: {fileID: 1693555246129308}
@@ -583,6 +547,7 @@ MonoBehaviour:
   SpaceX: 9.95
   SpaceY: 6.625
   actionObject: {fileID: 1417957972590686}
+  multiActionObject: {fileID: 0}
 --- !u!114 &114839906768361394
 MonoBehaviour:
   m_ObjectHideFlags: 1
