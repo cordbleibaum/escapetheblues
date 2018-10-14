@@ -210,6 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4889279371977564}
   - component: {fileID: 212313928288097300}
+  - component: {fileID: 95313303232433454}
   m_Layer: 0
   m_Name: GhostTrain
   m_TagString: Untagged
@@ -305,6 +306,24 @@ Transform:
   m_Father: {fileID: 4596951600581900}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95313303232433454
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875013009635054}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 77e5333582a1c46d5b5f95c99edabc17, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114046539587969340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1449,7 +1468,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fdc403922b2b8493887596c1b04c4113, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef43a8089f1a84b7fb94be6d88dd7c64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
