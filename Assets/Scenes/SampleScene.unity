@@ -1130,6 +1130,7 @@ MonoBehaviour:
   - {fileID: 1276972419717916, guid: 783d84c43a38b4c798931d237cbec2e7, type: 2}
   - {fileID: 1256851742338434, guid: 81725f15192344d369e58a6ceee63444, type: 2}
   - {fileID: 1651928326361224, guid: 873ef3c6c7f1c40e7858d4a5abd9fbbe, type: 2}
+  - {fileID: 1517088935766654, guid: 57d259b1b2caf4ce1aa9a0126c515d46, type: 2}
   startTile: {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
   goalTile: {fileID: 1190541458928472, guid: bc1cb682392b044efb808d392794733d, type: 2}
   grassTile: {fileID: 1740312061397758, guid: 577f71dfc245b43fdb66ba6c415f5e6d, type: 2}
