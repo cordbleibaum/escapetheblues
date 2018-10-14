@@ -780,105 +780,93 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Schwester: "Ja, ist gut, wir haben die Geschichte alleine heute'
+  - text: "Timmys Schwester: \"Wir haben die Geschichte heute oft genug geh\xF6rt.\""
     next: 2
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "bestimmt schon f\xFCnf mal geh\xF6rt.\""
+  - text: 'Timmy: "Ich will Achterbahn fahren!"'
     next: 3
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmy: "Ich will Achterbahn fahren!"'
-    next: 4
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Du willst immer irgendwas."'
-    next: 5
+    next: 4
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Timmys Schwester: \"H\xF6r nicht auf den b\xF6sen Mann. Der ist nur sauer,
       weil"
-    next: 6
+    next: 5
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: er nicht zu Hause auf der Couch liegen und sich selbst bemitleiden kann."
-    next: 7
+    next: 6
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Du kleine..."'
-    next: 8
+    next: 7
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Opa: "Oh schaut mal, eine Achterbahn!"'
-    next: 9
+    next: 8
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmy: "Siehst du? Er versteht mich."'
+    next: 9
+    isLast: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 1681738516852270}
+  - text: 'Timmys Opa: "Damals war wenigstens alles noch aus Holz."'
     next: 10
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Onkel: "Ach, verdammt."'
-    next: 11
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 1681738516852270}
-  - text: 'Timmys Opa: "Also bei uns war wenigstens noch alles aus Holz."'
-    next: 12
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Die Geisterbahn war der Hammer, oder Timmy?"'
-    next: 13
+    next: 11
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Timmy: \"Ich wei\xDF nicht so recht.\""
-    next: 14
+    next: 12
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ich glaube hier hat nur eine von uns eine nahezu kindische'
-    next: 15
+    next: 13
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: Freude an den Plastik-Zombies."
-    next: 16
+    next: 14
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Timmys Schwester: \"Immerhin muss ich mich nicht \xFCber Teenager lustig"
-    next: 17
+    next: 15
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "machen um mich nicht erb\xE4rmlich zu f\xFChlen.\""
-    next: 17
+    next: 16
     isLast: 1
     options: []
     nextAction: {fileID: 0}
@@ -1302,6 +1290,7 @@ MonoBehaviour:
   SpaceX: 9.95
   SpaceY: 6.625
   actionObject: {fileID: 1451891928043964}
+  multiActionObject: {fileID: 0}
 --- !u!114 &114967273898788402
 MonoBehaviour:
   m_ObjectHideFlags: 1
