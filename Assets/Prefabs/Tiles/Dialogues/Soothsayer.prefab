@@ -346,128 +346,118 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Timmys Onkel: \"Timmy, was zur H\xF6lle? Ich hab' dir gesagt, dass das
-      unter"
+  - text: "Timmys Onkel: \"Timmy, was zur H\xF6lle?"
     next: 3
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "uns bleiben muss! Mach dich nur \xFCber mich lustig. Zu deiner"
+  - text: Egal, ich muss das jetzt tun."
     next: 4
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Information: diese Wahrsagerin hat Psychologie studiert."'
+  - text: Timmys Onkel geht in das Zelt.
     next: 5
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Timmys Schwester: \"Und statt eine seri\xF6se Therapeutin zu werden, wurde
-      sie"
+  - text: 'Timmys Onkel: "So sehen wir uns wieder!"'
     next: 6
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: Wahrsagerin auf einem Jahrmarkt? Inwiefern macht das irgendwas besser?"
+  - text: 'Ex: "Ich habe dich erwartet."'
     next: 7
     isLast: 0
-    options: []
+    options:
+    - text: So tief gesunken
+      next: 7
+    - text: "Will dich zur\xFCck"
+      next: 12
+    - text: HAHA
+      next: 17
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Onkel: "Ach halt doch die Klappe."'
+  - text: 'Timmys Onkel: "Wie konntest du nur so tief sinken?'
     next: 8
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: Timmys Onkel verschwindet im Zelt
+  - text: "Hast du dich nicht immer damit gebr\xFCstet"
     next: 9
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Wahrsagerin: \"Also, erz\xE4hlen Sie mir doch erst einmal von ihren Onkel-Events.\""
+  - text: intelligenter als ich zu sein?"
     next: 10
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Onkel: "Von meinen WAS?"'
+  - text: 'Ex: "Du sprichst von tief sinken?'
     next: 11
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Wahrsagerin: "Sie wissen genau was ich meine. Zeigen sie mir doch an'
+  - text: Warum bist du denn hier?"
     next: 12
     isLast: 0
-    options: []
+    options:
+    - text: "Will dich zur\xFCck"
+      next: 12
+    - text: HAHA
+      next: 17
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "dieser Puppe, wo sie ber\xFChrt worden sind.\""
+  - text: 'Ex: "Warte kurz."'
     next: 13
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Timmys Onkel: \"Ich bin nie ber\xFChrt worden. Wovon reden Sie? Verwechseln"
+  - text: 'Timmys Onkel: "Was machst du mit der Kugel?"'
     next: 14
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: Sie mich mit irgendjemandem?"
+  - text: 'Ex: "Die Kugel sagt nein!"'
     next: 15
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Wahrsagerin: "Oh... Meine Kugel sagt mir einfach, dass Ihr Charakter stark'
+  - text: 'Timmys Onkel: "Aber..."'
     next: 16
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "beeintr\xE4chtigt ist auf eine Weise, die entweder durch ein Kindheitstrauma"
+  - text: 'Ex: "Die Kugel sagt NEIN!"'
     next: 17
-    isLast: 0
+    isLast: 1
     options: []
     nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: "ausgel\xF6st worden ist oder...\""
+    afterAction: {fileID: 1823315750302924}
+  - text: 'Timmys Onkel: "HAHA!"'
     next: 18
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Onkel: "Ja, oder...?"'
+  - text: 'Ex: "Siehst du und deswegen stirbst du alleine."'
     next: 19
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: 'Wahrsagerin: "Naja, oder Sie sind einfach ein Arsch."'
-    next: 20
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: "(Wahrsagerin: \"Viel Spa\xDF noch mit ihrer Familie, Timmys Onkel!\")"
-    next: 21
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: "Timmys Onkel: \"Das h\xF6r ich mir nicht l\xE4nger an!\""
-    next: 21
     isLast: 1
     options: []
     nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
+    afterAction: {fileID: 1823315750302924}
   optionButtons: []
   text: {fileID: 114657745767437808}
   nextAction: {fileID: 1823315750302924}
@@ -682,6 +672,7 @@ MonoBehaviour:
   SpaceX: 9.95
   SpaceY: 6.625
   actionObject: {fileID: 1166835834996594}
+  multiActionObject: {fileID: 0}
 --- !u!114 &114872531306633300
 MonoBehaviour:
   m_ObjectHideFlags: 1

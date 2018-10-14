@@ -1024,6 +1024,7 @@ MonoBehaviour:
   SpaceX: 9.95
   SpaceY: 6.625
   actionObject: {fileID: 1551126229318938}
+  multiActionObject: {fileID: 0}
 --- !u!114 &114573565715439068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1219,149 +1220,94 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Alphabully: "Weil das die coolen Typen in Filmen immer machen und'
+  - text: "Alphabully: \"Verdammter Klugschei\xDFer! Wir sehen uns Montag!\""
     next: 11
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: ich cool bin."
-    next: 12
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: 'Timmy: "Sagt wer?"'
-    next: 13
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: "Alphabully: \"ICH sag das. Wenn hier nicht so viele Leute w\xE4ren,"
-    next: 14
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: "w\xFCrde ich dir jetzt so eine rein hauen.\""
-    next: 14
     isLast: 1
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 1080968598486804}
   - text: 'Timmy: "Onkel, hilf mir!"'
-    next: 16
+    next: 12
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Was ist eigentlich kaputt bei dir? Die sehen nicht mal
       f\xFCr"
-    next: 17
+    next: 13
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: dein Alter bedrohlich aus. Bist du denn zu einem kompletten
-    next: 18
+    next: 14
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: Weichei erzogen worden?!"
-    next: 19
+    next: 15
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Alphabully: \"Wow, besser h\xE4tte ich das nicht machen k\xF6nnen. K\xF6nnen"
-    next: 20
+    next: 16
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: Sie mir das beibringen?"
-    next: 21
+    next: 17
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ach, verpiss dich."'
-    next: 22
+    next: 18
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Alphabully: "Pf, okay. Wir sehen uns Montag Timmy."'
-    next: 22
+  - text: 'Alphabully: "Alles klar, Chef! Wir sehen uns Montag Timmy."'
+    next: 19
     isLast: 1
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 1466082000392460}
   - text: 'Timmys Schwester: "Wow. Ihr geht in diese Timmye Klasse und du kannst dir
       nicht mal'
-    next: 24
+    next: 20
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: seinen Namen merken? Kein Wunder, dass du Depp 1 und Depp 2
-    next: 25
+    next: 21
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: als Begleitung brauchst. Sind die dir als Zivis zugewiesen
-    next: 26
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: worden?"
-    next: 27
+  - text: als Begleitung brauchst."
+    next: 22
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Alphabully: "Wa... Was?..."'
-    next: 28
+    next: 23
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Schwester: "Pass auf, ich nehme einfach mal an, dass irgendwas in
-      deinem'
-    next: 29
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: Leben gerade richtig kaputt ist, aber wenn du Timmy
-    next: 30
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: nochmal dumm anmachst gibt es Stress. Geh einfach heim und
-    next: 31
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: "such dir nen Psychologen, aber lass andere mit deinem Schei\xDF"
-    next: 32
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: in Ruhe."
-    next: 33
+  - text: 'Timmys Schwester: "Lass deine Probleme nicht an Timmy aus."'
+    next: 24
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Alphabully: \"Ich... \xE4h... okay. Kommt, lass abhauen hier.\""
-    next: 33
+    next: 25
     isLast: 1
     options: []
     nextAction: {fileID: 0}

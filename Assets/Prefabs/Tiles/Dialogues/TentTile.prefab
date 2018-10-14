@@ -308,6 +308,7 @@ MonoBehaviour:
   SpaceX: 9.95
   SpaceY: 6.625
   actionObject: {fileID: 1805928002935382}
+  multiActionObject: {fileID: 0}
 --- !u!114 &114319214678673106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -478,13 +479,13 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Timmys Opa: \"Auf in den Kampf! F\xFCr den Alkohol!\""
+  - text: 'Timmys Opa: "Auf in den Kampf! Der Feind ist das Bier!"'
     next: 2
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Schwester: "Opa bitte. Du warst nicht mal in einem Krieg." '
+  - text: 'Timmys Schwester: "Opa bitte. Du warst nicht mal im Krieg." '
     next: 3
     isLast: 0
     options: []
@@ -509,27 +510,14 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "j\xE4mmerlichen Existenz f\xFCr einen fl\xFCchtigen Moment entkommen, indem
-      sie ihre..."
+  - text: "j\xE4mmerlichen Existenz f\xFCr einen fl\xFCchtigen Moment entkommen.\""
     next: 7
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Seele und ihren K\xF6rper mit Nervengift f\xFCllen, bis sie ihre irdischen"
-    next: 8
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: Probleme vergessen.
-    next: 9
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
   - text: "Timmy: \"H\xE4?\""
-    next: 10
+    next: 8
     isLast: 0
     options: []
     nextAction: {fileID: 0}

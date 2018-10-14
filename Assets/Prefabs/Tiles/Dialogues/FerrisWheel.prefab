@@ -396,7 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: 0
   lines:
-  - text: 'Timmy: "Ohhh, kore wa Risenraddo?"'
+  - text: 'Timmy: "Ohhh, kore wa Risenraddo."'
     next: 1
     isLast: 0
     options: []
@@ -415,13 +415,13 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "W\xFCnsche hier fr\xFChzeitig wieder zu verschwinden. Knechter der"
+  - text: "Hoffnungen hier fr\xFChzeitig wieder zu verschwinden. Knechter der"
     next: 4
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: Warteschlangen."
+  - text: Kniescheiben."
     next: 5
     isLast: 0
     options: []
@@ -458,7 +458,7 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Opa: "Ich muss dringend pinkeln."'
+  - text: 'Timmys Opa: "Ich muss mal."'
     next: 10
     isLast: 0
     options:

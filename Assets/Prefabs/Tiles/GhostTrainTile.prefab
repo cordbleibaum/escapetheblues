@@ -737,35 +737,20 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Timmys Onkel: \"Klar. Wenn du willst k\xF6nnen wir auch schauen ob sie
-      dort"
+  - text: "Timmys Onkel: \"Awww, Miss Erwachsen m\xF6chte Geisterbahn fahren.\""
     next: 3
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Kinderkost\xFCme f\xFCr kleine Hexen haben, aber ich wei\xDF nicht, ob
-      sie"
+  - text: 'Timmys Schwester: "Wenigstens verlass ich nicht zum ersten Mal'
     next: 4
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "welche in deiner Gr\xF6\xDFe haben.\""
+  - text: "seit Wochen die Wohnung. Au\xDFerdem mag Timmy Geisterbahnen.\""
     next: 5
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: "Timmys Schwester: \"Hey, ich hab nur geh\xF6rt, dass die gut sein soll
-      und"
-    next: 6
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: Timmy mag doch Geisterbahnen so gerne."
-    next: 7
     isLast: 0
     options: []
     nextAction: {fileID: 0}
@@ -781,47 +766,34 @@ MonoBehaviour:
     isLast: 0
     options: []
     nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: "Timmys Opa: \"Shhh! \xDCber was reden wir gerade?\""
+    afterAction: {fileID: 1206194467755124}
+  - text: 'Timmys Opa: "HEILIGE SCHEISSE! Wie sind wir denn hier gelandet?!"'
     next: 10
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmy: "Nichts, Opa. Komm einfach mit."'
-    next: 11
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 1206194467755124}
-  - text: "Timmys Opa: \"Du meine G\xFCte! \xC4h, ich meinte: Heilige Schei\xDFe!
-      Wie sind wir denn hier gelandet?!\""
-    next: 12
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
   - text: 'Timmy: "Was meinst du?"'
-    next: 13
+    next: 11
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ach, lass ihn reden. Vielleicht wird er einfach langsam
       senil."'
-    next: 14
+    next: 12
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Nett ist was anderes, aber da hat er wahrscheinlich
       recht."'
-    next: 15
+    next: 13
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Timmys Opa: \"Was redet ihr da \xFCber mich?\""
+  - text: "Timmys Opa: \"Redet ihr etwa \xFCber mich?!\""
     next: 15
     isLast: 1
     options: []
