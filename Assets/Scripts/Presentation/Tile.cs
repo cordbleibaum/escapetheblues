@@ -11,6 +11,7 @@ namespace Presentation
     {
         public bool isLimited;
         public int id;
+        public bool once;
         
         public int PosX;
         public int PosY;
@@ -20,6 +21,8 @@ namespace Presentation
 
         public GameObject actionObject;
 
+        private bool done;
+
         private void Start()
         {
             transform.Translate(new Vector2(PosX*SpaceX, PosY*SpaceY));
@@ -27,6 +30,11 @@ namespace Presentation
 
         public void OnGoto()
         {
+            if (done) return;
+            if (once)
+            {
+                done = true;
+            }
             if (actionObject) actionObject.SetActive(true);
         }
 

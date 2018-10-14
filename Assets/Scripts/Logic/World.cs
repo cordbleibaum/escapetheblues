@@ -32,6 +32,8 @@ namespace Logic
 
         private Tile currentTile;
 
+        private bool hasTeleported;
+
         private bool canSlideValue;
         public bool canSlide
         {
@@ -234,6 +236,14 @@ namespace Logic
                 CharacterGroup.instance.grandpa.sadness + CharacterGroup.instance.uncle.sadness) / 4;
         }
 
+        public void Teleport(int x, int y)
+        {
+            hasTeleported = true;
+            
+            map.Teleport(currentPosition.x - x, currentPosition.y - y);
+            currentPosition = new Vector2Int(x, y);
+        }
+
         public void Move(Direction direction)
         {
             
@@ -288,6 +298,8 @@ namespace Logic
                 CharacterGroup.instance.uncle.sadness += 5;
                 CharacterGroup.instance.grandpa.sadness += 5;
             }
+
+            hasTeleported = false;
         }
     }
 }

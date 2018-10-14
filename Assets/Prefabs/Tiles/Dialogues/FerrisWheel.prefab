@@ -401,53 +401,63 @@ MonoBehaviour:
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Grandpa: "Hai, Risenraddo, desu."'
     next: 2
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Da ist sie ja. Die Mutter der Langeweile. Zerst\xF6rer
       meiner"
     next: 3
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "W\xFCnsche hier fr\xFChzeitig wieder zu verschwinden. Knechter der"
     next: 4
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: Warteschlangen."
     next: 5
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmy Schwester: "Sakura dewa arimasen."'
     next: 6
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Die Warteschlange sieht aber wirklich lang aus. M\xFCssen
       wir"
     next: 7
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: das wirklich machen?"
     next: 8
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmy: "Aber ich will doch unbedingt..."'
     next: 9
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Bin ich die einzige, die bei dem Anblick hungrig wird?"'
     next: 10
     isLast: 0
     options: []
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: 'Timmys Opa: "Ich muss dringend pinkeln."'
     next: 10
     isLast: 0
@@ -461,26 +471,31 @@ MonoBehaviour:
     - text: keine Pinkelpause
       next: 14
     nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
   - text: '...'
     next: 11
     isLast: 1
     options: []
     nextAction: {fileID: 1609992701179476}
+    afterAction: {fileID: 0}
   - text: '...'
     next: 12
     isLast: 1
     options: []
     nextAction: {fileID: 1154268602604664}
+    afterAction: {fileID: 0}
   - text: '...'
     next: 13
     isLast: 1
     options: []
     nextAction: {fileID: 1268566799977358}
+    afterAction: {fileID: 0}
   - text: '...'
     next: 14
     isLast: 1
     options: []
     nextAction: {fileID: 1712701439722696}
+    afterAction: {fileID: 0}
   optionButtons:
   - {fileID: 1125886171734644}
   - {fileID: 1849298697377012}
@@ -1433,6 +1448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLimited: 1
   id: 2
+  once: 1
   PosX: 0
   PosY: 0
   SpaceX: 9.95

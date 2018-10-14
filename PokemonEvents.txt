@@ -1,4 +1,4 @@
-Bullies:
+Bullies vs Timmy:
 	Bullies appear
 	Timmy: "Oh nein!"
 	AlphaBully: "Wen haben wir denn da?"
@@ -30,7 +30,7 @@ Bullies:
 			Alphabully: "Pf, okay. Wir sehen uns Montag Timmy."
 			Timmy +25 bp
 		d) Timmys Schwester assist (falls Timmys Schwester bp unter 50)
-			Timmys Schwester: "Wow. Ihr geht in dieseTimmye Klasse und du kannst dir nicht mal
+			Timmys Schwester: "Wow. Ihr geht in dieselbe Klasse und du kannst dir nicht mal
 				seinen Namen merken? Kein Wunder, dass du Depp 1 und Depp 2
 				als Begleitung brauchst. Sind die dir als Zivis zugewiesen
 				worden?"
@@ -42,3 +42,104 @@ Bullies:
 				in Ruhe."
 			Alphabully: "Ich... äh... okay. Kommt, lass abhauen hier."
 			Timmy -15 bp
+
+
+Christian the christian guy vs Schwester:
+	a wild christian appears
+	Christian: "Hi, Timmys Opa. Hi, Timmys Onkel. Hi, Timmys Schwester. Hi,
+		Timmy"
+	Timmys Schwester: "Oh verdammt..."
+	Christian: "Hey, hast du über meinen Vorschlag letztens nachgedacht?"
+	Timmys Onkel: "Was denn für einen Vorschlag?"
+	Timmys Schwester: "Er will, dass ich diesen Sonntag in die Kirche gehe um
+		mich zu läutern, weil er der festen Überzeugung ist, dass ich eine unreine
+		Satanistin bin, die das Blut von Neugeborenen trinkt. Er nimmt das mit
+		der Bibel ein bisschen zu ernst und hat allgemein an der Waffel."
+	Timmys Onkel: "Und ich dachte du wärst ein schräger Vogel."
+	Christian: "Es ist nichts falsch daran den Willen Gottes wörtlich zu
+		nehmen. Ich muss dich aber warnen: es wird nicht mehr lange dauern,
+		bis die Heerscharen des Himmels dich für deine Sünden ins ewige Höllenfeuer
+		werfen."
+	optionen:
+		a) Schnippisch antworten
+			Timmys Schwester: "Dann müsste deine Mutter in die Hölle,
+				nachdem ich gestern bei ihr war."
+			Christian: "Du wagst es meine Mutter ins Spiel zu bringen? Meine
+				Mutter ist die gläubigste Christin die ich kenne. Niemanden
+				wird Jesus mehr im Himmel willkommen heißen als sie. Ich werde
+				nicht aufgeben dich zu bekehren."
+			Timmys Schwester ist genervt, aber freut sich ihn verletzt zu haben: +10 bp
+		b) drohen
+			Timmys Schwester: "Wenn du mich nicht bald in Ruhe lässt zeig ich dir
+				Heerscharen. Du denkst ich habe keine Macht über die Dämonen der Hölle?"
+			Christian: "Leere Drohungen. Niemals werden die Kräfte der Hölle
+				die des Himmels besiegen. Ich werde nicht aufgeben dich zu
+				bekehren."
+			Timmys Schwester ist hart genervt: +20 bp
+		c) Opa Assist (max 50 bp)
+			Timmys Opa haut Christian eine rein.
+			Christian: "Ich... werde... wieder... kommen."
+			Timmys Schwester: "Danke, Opa."
+			Timmys Opa: "Fundamentalisten konnte ich noch nie leiden."
+			Timmys Schwester freut sich: -5 bp
+		d) Timmy Assist (max 50 bp)
+			Timmy: "Also ich hab in der Schule gelernt, dass Jesus immer
+				Nächstenliebe gepredigt hat. Höllenfeuer klingt aber nicht
+				nach Liebe."
+			Timmys Schwester: "Ich bin zwar gegen Religionsunterricht in der
+				Schule, aber da hat er Recht."
+			Christian: "Ihr seid einfach naiv. Es würde gegen die
+				Nächstenliebe verstoßen sie einfach ins offene Messer des
+				Satans laufen zu lassen."
+			Timmys Schwester ist genervt, aber freut sich, dass Timmy ihr helfen wollte: +10 bp
+
+
+Ex-Freundin vs Onkel:
+	Timmys Onkel: "Was suchen die denn hier?!"
+	Ex: "Oh hi, Timmys Onkel. Was suchst du denn hier?"
+	Timmys Onkel: "Ach hallo, schön dich zu sehen! Ich verbringe einfach einen
+		Tag mit der Familie."
+	Ex: "Das ist übrigens Alfredo. Wie ist es dir denn gegangen?"
+	optionen:
+		a) übertreiben
+			Timmys Onkel: "Die letzten Monate liefen bei mir einfach
+				wundervoll. Ich habe mein Leben gerade so richtig im Griff."
+			Ex: "Das freut mich für dich. Wirklich."
+			Timmys Onkel fühlt sich schäbig: +10 bp
+		b) ablocken
+			Timmys Onkel: "Ganz okay, aber viel wichtiger: Wie geht es denn
+				dir?"
+			Ex: "Wundervoll. Du, es war schön dich mal wieder zu treffen, aber
+				wir müssen weiter."
+			Timmys Onkel sieht ihren mitleidigen Blick: +20 bp
+
+
+Schießbudenangestellter Steve vs Onkel:
+	Steve: "Herzlich Willkommen, bei meinem bescheidenen Schießstand. Wer von euch
+		möchte denn spielen? Wie wäre es denn mit Ihnen? Als starker
+		gutaussehender Mann sollte das doch kein Problem sein."
+	Timmys Onkel: "Ich?!"
+	Timmys Schwester: "Er?!"
+	Steve: "Wer denn sonst? Und warum so überrascht?"
+	optionen:
+		a) interessiert
+			Timmys Onkel: "Ich... ähm... also, danke... ähm... ja, wenn Sie das sagen
+				kann ich es gerne mal versuchen. Wie viel kostet der Spaß denn?"
+			Steve: "Ach, Sie dürfen hier kostenlos spielen und nennen Sie mich doch
+				Steve."
+			Timmys Onkel: "Oh, gerne, Steve. Ich bin Tommys Onkel."
+			Timmy: "Ich heiße Timmy!"
+			Timmys Schwester: "Du dumme Sau!"
+			Timmys Onkel freut sich: -25 bp
+		b) desinteressiert aber geschmeichelt
+			Timmys Onkel: "Ich... ähm... also, danke... ähm... ja, wenn Sie das sagen
+				kann ich es gerne mal versuchen. Wie viel kostet der Spaß denn?"
+			Steve: "Ach, Sie dürfen hier kostenlos spielen und nennen Sie mich doch
+				Steve."
+			Timmys Onkel: "Oh, gerne, Steve. Da sagt man doch nicht nein."
+			Timmys Onkel freut sich: -5 bp
+		c) homophob:
+			Timmys Onkel: "Nein, also bei sowas werd ich sicher nichts
+				spielen! Sie widern mich an!"
+			Timmys Onkel ist ein Arsch und regt sich über Dinge im Leben
+			anderer auf, die ihn nichts angehen: +50 bp
