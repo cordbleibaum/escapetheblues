@@ -1208,7 +1208,7 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: "Alphabully: \"\xC4hm... okay. Ja. Das seh ich.\""
+  - text: "Alphabudi: \"\xC4hm... okay. Ja. Das seh ich.\""
     next: 9
     isLast: 0
     options: []

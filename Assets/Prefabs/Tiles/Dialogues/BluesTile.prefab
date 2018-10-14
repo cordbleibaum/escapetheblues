@@ -320,24 +320,6 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: 'Timmys Schwester: "Ex-Tante meinst du."'
-    next: 6
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: 'Timmys Onkel: "Wirklich? Musste das sein?"'
-    next: 7
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: 'Timmys Schwester: "Komm damit klar."'
-    next: 8
-    isLast: 0
-    options: []
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
   - text: 'Timmy: "Das Lied macht mich traurig."'
     next: 8
     isLast: 1
