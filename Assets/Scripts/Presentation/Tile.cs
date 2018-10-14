@@ -20,6 +20,7 @@ namespace Presentation
         public float SpaceY;
 
         public GameObject actionObject;
+        public GameObject multiActionObject;
 
         private bool done;
 
@@ -30,6 +31,7 @@ namespace Presentation
 
         public void OnGoto()
         {
+            if (multiActionObject) multiActionObject.SetActive(true);
             if (done) return;
             if (once)
             {
@@ -40,6 +42,7 @@ namespace Presentation
 
         public void OnLeave()
         {
+            if (multiActionObject) multiActionObject.SetActive(false);
             if (actionObject) actionObject.SetActive(false);
         }
     }
