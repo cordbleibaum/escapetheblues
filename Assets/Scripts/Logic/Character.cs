@@ -6,5 +6,7 @@ namespace Logic
     {
         public int sadness = 0;
         public bool goalFulfilled;
+
+        public GameObject goalCheck;
     }
 }
