@@ -889,7 +889,7 @@ MonoBehaviour:
     isLast: 1
     options: []
     nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
+    afterAction: {fileID: 1076166709474858}
   optionButtons:
   - {fileID: 1537885814886564}
   - {fileID: 1113886917342742}
