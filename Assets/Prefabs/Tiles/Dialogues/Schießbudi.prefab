@@ -1230,7 +1230,7 @@ MonoBehaviour:
       next: 5
     - text: desinteressiert aber geschmeichelt
       next: 11
-    - text: homophob
+    - text: angewidert
       next: 16
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
@@ -1310,7 +1310,7 @@ MonoBehaviour:
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
-  - text: spielen! Sie widern mich an!"
+  - text: spielen!"
     next: 17
     isLast: 1
     options: []
