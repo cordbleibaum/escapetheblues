@@ -147,6 +147,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1595027375463196
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4429945819728966}
+  - component: {fileID: 114936719750706300}
+  m_Layer: 0
+  m_Name: Shoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1646193889326128
 GameObject:
   m_ObjectHideFlags: 1
@@ -160,6 +176,22 @@ GameObject:
   - component: {fileID: 114295940447917764}
   m_Layer: 5
   m_Name: Option3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1746269164389546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4174559037709682}
+  - component: {fileID: 212413228092732452}
+  m_Layer: 0
+  m_Name: ShoohootingRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,6 +227,22 @@ GameObject:
   - component: {fileID: 114222830869668392}
   m_Layer: 5
   m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1942981976499852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4617252562981416}
+  - component: {fileID: 212080354503095822}
+  m_Layer: 0
+  m_Name: Char_Stephen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -250,6 +298,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4174559037709682
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746269164389546}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.06, y: 0.51, z: -0.2}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_Children: []
+  m_Father: {fileID: 4616354652483776}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4382003099658012
 Transform:
   m_ObjectHideFlags: 1
@@ -262,6 +323,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4468135695269650}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4429945819728966
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1595027375463196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4468135695269650}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4468135695269650
 Transform:
@@ -278,6 +352,7 @@ Transform:
   - {fileID: 4919809513658934}
   - {fileID: 4949501770752848}
   - {fileID: 224634796479418828}
+  - {fileID: 4429945819728966}
   m_Father: {fileID: 4616354652483776}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -292,8 +367,23 @@ Transform:
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 4468135695269650}
+  - {fileID: 4174559037709682}
+  - {fileID: 4617252562981416}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4617252562981416
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1942981976499852}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.152, y: -0.078, z: -0.3}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 4616354652483776}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4778100905553146
 Transform:
@@ -1141,180 +1231,89 @@ MonoBehaviour:
     - text: desinteressiert aber geschmeichelt
       next: 11
     - text: homophob
-      next: 17
+      next: 16
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Timmys Onkel: \"Ich... \xE4hm... also, danke... \xE4hm... ja, wenn Sie
       das sagen"
     next: 6
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "kann ich es gerne mal versuchen. Wie viel kostet der Spa\xDF denn?\""
     next: 7
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Steve: \"Ach, Sie d\xFCrfen hier kostenlos spielen und nennen Sie mich
       doch"
     next: 8
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: Steve."
     next: 9
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Oh, gerne, Steve. Ich bin Tommys Onkel."'
     next: 10
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Timmy, du dumme Sau!"'
     next: 10
-    isLast: 1
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    isLast: 0
+    options: []
     nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
+    afterAction: {fileID: 1595027375463196}
   - text: "Timmys Onkel: \"Ich... \xE4hm... also, danke... \xE4hm... ja, wenn Sie
       das sagen"
     next: 12
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "kann ich es gerne mal versuchen. Wie viel kostet der Spa\xDF denn?\""
     next: 13
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: "Timmys Onkel: \"Ich... \xE4hm... also, danke... \xE4hm... ja, wenn Sie
-      das sagen"
-    next: 14
-    isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Steve: \"Ach, Sie d\xFCrfen hier kostenlos spielen und nennen Sie mich
       doch"
-    next: 15
+    next: 14
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: Steve."
-    next: 16
+    next: 15
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Oh, gerne, Steve. Da sagt man doch nicht nein."'
-    next: 16
-    isLast: 1
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
-    nextAction: {fileID: 0}
-    afterAction: {fileID: 0}
-  - text: 'Timmys Onkel: "Nein, also bei sowas werd ich sicher nichts'
-    next: 18
+    next: 15
     isLast: 0
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 1595027375463196}
+  - text: 'Timmys Onkel: "Nein, also bei sowas werd ich sicher nichts'
+    next: 17
+    isLast: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: spielen! Sie widern mich an!"
-    next: 18
+    next: 17
     isLast: 1
-    options:
-    - text: interessiert
-      next: 5
-    - text: desinteressiert aber geschmeichelt
-      next: 0
-    - text: homophob
-      next: 0
+    options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   optionButtons:
@@ -1549,6 +1548,109 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114936719750706300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1595027375463196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3c04443cf4142c7a31b8c006cbdc1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &212080354503095822
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1942981976499852}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 8c127374cf90e48779c5592875b7a0fe, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.24, y: 12.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!212 &212413228092732452
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746269164389546}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 35fcb99447caa450f80356effe0956d3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6, y: 6}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!212 &212790514800416726
 SpriteRenderer:
   m_ObjectHideFlags: 1

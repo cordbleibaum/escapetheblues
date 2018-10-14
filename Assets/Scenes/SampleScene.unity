@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 337581466}
   m_Layer: 5
   m_Name: Characters
-  m_TagString: Untagged
+  m_TagString: MainScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 379091957}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: MainScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1087,7 +1087,7 @@ GameObject:
   - component: {fileID: 1316982220}
   m_Layer: 0
   m_Name: Game
-  m_TagString: Untagged
+  m_TagString: MainScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1115,6 +1115,7 @@ MonoBehaviour:
   - {fileID: 1956218982163428, guid: 71b1495f050a347e9b806a08ffb8b024, type: 2}
   - {fileID: 1910989869040366, guid: 37ad48728600442a3a59e81573f97d9b, type: 2}
   - {fileID: 1906891408174926, guid: 2ae0cf5cbc3a14036954cf0f37df5fb5, type: 2}
+  - {fileID: 1051242533124372, guid: 0d7196c19e43145a38830bacc88a6b7e, type: 2}
   startTile: {fileID: 1237466916070332, guid: dd27e9e7688e842af9cdcca9f830dbc9, type: 2}
   goalTile: {fileID: 1190541458928472, guid: bc1cb682392b044efb808d392794733d, type: 2}
   grassTile: {fileID: 1740312061397758, guid: 577f71dfc245b43fdb66ba6c415f5e6d, type: 2}
@@ -1350,7 +1351,7 @@ GameObject:
   - component: {fileID: 1358002411}
   m_Layer: 0
   m_Name: Arrows
-  m_TagString: Untagged
+  m_TagString: MainScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1410,6 +1411,10 @@ Prefab:
     - target: {fileID: 4059077041642650, guid: ba523f87adbb54617aeefc3dfc0b1acd, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297751307628330, guid: ba523f87adbb54617aeefc3dfc0b1acd, type: 2}
+      propertyPath: m_TagString
+      value: MainScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba523f87adbb54617aeefc3dfc0b1acd, type: 2}
@@ -1797,7 +1802,7 @@ GameObject:
   - component: {fileID: 1874007892}
   m_Layer: 0
   m_Name: Map
-  m_TagString: Untagged
+  m_TagString: MainScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

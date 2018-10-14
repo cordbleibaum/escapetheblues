@@ -35,9 +35,7 @@ namespace Presentation
         private DialogueLine current;
 
         private void UpdateText()
-        {
-            if (current.afterAction) current.afterAction.SetActive(true);
-            
+        {        
             text.text = current.text;
             if (!current.isLast)
             {
@@ -89,6 +87,7 @@ namespace Presentation
         {
             if (current.options.Length == 0)
             {
+                if (current.afterAction) current.afterAction.SetActive(true);
                 current = lines[current.next];
                 UpdateText();
             }
@@ -98,6 +97,7 @@ namespace Presentation
         {
             if (number < current.options.Length)
             {
+                if (current.afterAction) current.afterAction.SetActive(true);
                 current = lines[current.options[number].next];
                 UpdateText();
             }
