@@ -775,45 +775,45 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmy: "Mag ich gar ni..."'
-    next: 8
+    next: 6
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Shhh!"'
-    next: 9
+    next: 7
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 1206194467755124}
   - text: 'Timmys Opa: "HEILIGE SCHEISSE! Wie sind wir denn hier gelandet?!"'
-    next: 10
+    next: 8
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmy: "Was meinst du?"'
-    next: 11
+    next: 9
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Onkel: "Ach, lass ihn reden. Vielleicht wird er einfach langsam
       senil."'
-    next: 12
+    next: 10
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Nett ist was anderes, aber da hat er wahrscheinlich
       recht."'
-    next: 13
+    next: 11
     isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Timmys Opa: \"Redet ihr etwa \xFCber mich?!\""
-    next: 15
+    next: 12
     isLast: 1
     options: []
     nextAction: {fileID: 0}

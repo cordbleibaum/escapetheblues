@@ -1173,7 +1173,7 @@ MonoBehaviour:
     - text: antworten
       next: 7
     - text: Timmys Onkel assist
-      next: 15
+      next: 11
     - text: Timmys Schwester assist
       next: 23
     nextAction: {fileID: 0}

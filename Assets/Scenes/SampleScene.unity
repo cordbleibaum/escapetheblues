@@ -528,7 +528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sadness: 0
   goalFulfilled: 0
-  goalCheck: {fileID: 893578629}
+  goalCheck: {fileID: 1707357828}
 --- !u!1 &509715479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1430,10 @@ Prefab:
     - target: {fileID: 1297751307628330, guid: ba523f87adbb54617aeefc3dfc0b1acd, type: 2}
       propertyPath: m_TagString
       value: MainScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297751307628330, guid: ba523f87adbb54617aeefc3dfc0b1acd, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba523f87adbb54617aeefc3dfc0b1acd, type: 2}
