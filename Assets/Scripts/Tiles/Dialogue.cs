@@ -40,6 +40,8 @@ namespace Presentation
             if (!current.isLast)
             {
                 World.instance.canSlide = false;
+                if (nextAction) nextAction.SetActive(true);
+                if (current.nextAction) current.nextAction.SetActive(true);
             }
             else
             {
