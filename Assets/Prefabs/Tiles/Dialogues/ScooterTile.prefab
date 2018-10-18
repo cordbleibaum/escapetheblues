@@ -265,6 +265,12 @@ MonoBehaviour:
     afterAction: {fileID: 0}
   - text: 'Fremde Stimme 2: "Verdammt, er hat ein Kind als Geisel!"'
     next: 9
+    isLast: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 1693555246129308}
+  - text: END
+    next: 9
     isLast: 1
     options: []
     nextAction: {fileID: 0}

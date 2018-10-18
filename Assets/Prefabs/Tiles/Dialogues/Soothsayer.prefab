@@ -899,8 +899,8 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Ex: "Die Kugel sagt NEIN!"'
-    next: 16
-    isLast: 1
+    next: 19
+    isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 1823315750302924}
@@ -911,7 +911,13 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Ex: "Siehst du und deswegen stirbst du alleine."'
-    next: 18
+    next: 19
+    isLast: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 1823315750302924}
+  - text: END
+    next: 19
     isLast: 1
     options: []
     nextAction: {fileID: 0}

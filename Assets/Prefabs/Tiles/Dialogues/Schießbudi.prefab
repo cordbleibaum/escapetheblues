@@ -1311,6 +1311,12 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: spielen!"
+    next: 18
+    isLast: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
+  - text: END
     next: 17
     isLast: 1
     options: []

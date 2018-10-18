@@ -886,6 +886,12 @@ MonoBehaviour:
     afterAction: {fileID: 0}
   - text: "machen um mich nicht erb\xE4rmlich zu f\xFChlen.\""
     next: 16
+    isLast: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 1076166709474858}
+  - text: END
+    next: 16
     isLast: 1
     options: []
     nextAction: {fileID: 0}

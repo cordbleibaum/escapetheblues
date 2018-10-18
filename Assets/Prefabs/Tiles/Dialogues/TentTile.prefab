@@ -523,6 +523,12 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmys Schwester: "Genau, Timmy. Genau das."'
+    next: 9
+    isLast: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
+  - text: END
     next: 10
     isLast: 1
     options: []

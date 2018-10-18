@@ -321,7 +321,13 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmy: "Das Lied macht mich traurig."'
-    next: 8
+    next: 6
+    isLast: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
+  - text: END
+    next: 6
     isLast: 1
     options: []
     nextAction: {fileID: 0}

@@ -814,6 +814,12 @@ MonoBehaviour:
     afterAction: {fileID: 0}
   - text: "Timmys Opa: \"Redet ihr etwa \xFCber mich?!\""
     next: 12
+    isLast: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 0}
+  - text: END
+    next: 12
     isLast: 1
     options: []
     nextAction: {fileID: 0}

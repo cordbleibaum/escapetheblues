@@ -43,6 +43,9 @@ namespace Presentation
             }
             else
             {
+                GameObject canvas = (transform.Find("Canvas")).gameObject;
+                if (canvas) canvas.SetActive(false);
+
                 World.instance.canSlide = true;
                 if (nextAction) nextAction.SetActive(true);
                 if (current.nextAction) current.nextAction.SetActive(true);

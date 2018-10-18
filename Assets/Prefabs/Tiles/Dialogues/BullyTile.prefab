@@ -1197,8 +1197,8 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Timmy: "So ein Arsch."'
-    next: 6
-    isLast: 1
+    next: 25
+    isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 1226914256716612}
@@ -1221,8 +1221,8 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Alphabully: \"Verdammter Klugschei\xDFer! Wir sehen uns Montag!\""
-    next: 10
-    isLast: 1
+    next: 25
+    isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 1080968598486804}
@@ -1270,8 +1270,8 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: 'Alphabully: "Alles klar, Chef! Wir sehen uns Montag Timmy."'
-    next: 18
-    isLast: 1
+    next: 25
+    isLast: 0
     options: []
     nextAction: {fileID: 0}
     afterAction: {fileID: 1466082000392460}
@@ -1307,6 +1307,12 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: "Alphabully: \"Ich... \xE4h... okay. Kommt, lass abhauen hier.\""
+    next: 25
+    isLast: 0
+    options: []
+    nextAction: {fileID: 0}
+    afterAction: {fileID: 1763544111863842}
+  - text: END
     next: 25
     isLast: 1
     options: []

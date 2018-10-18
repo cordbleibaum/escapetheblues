@@ -473,25 +473,31 @@ MonoBehaviour:
     nextAction: {fileID: 0}
     afterAction: {fileID: 0}
   - text: '...'
-    next: 11
-    isLast: 1
+    next: 15
+    isLast: 0
     options: []
     nextAction: {fileID: 1609992701179476}
     afterAction: {fileID: 0}
   - text: '...'
-    next: 12
-    isLast: 1
+    next: 15
+    isLast: 0
     options: []
     nextAction: {fileID: 1154268602604664}
     afterAction: {fileID: 0}
   - text: '...'
-    next: 13
-    isLast: 1
+    next: 15
+    isLast: 0
     options: []
     nextAction: {fileID: 1268566799977358}
     afterAction: {fileID: 0}
   - text: '...'
-    next: 14
+    next: 15
+    isLast: 0
+    options: []
+    nextAction: {fileID: 1712701439722696}
+    afterAction: {fileID: 0}
+  - text: END
+    next: 15
     isLast: 1
     options: []
     nextAction: {fileID: 1712701439722696}
